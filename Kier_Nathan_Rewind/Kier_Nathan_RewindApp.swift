@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Kier_Nathan_RewindApp: App {
+    @State private var store = ChatStore()
+    @State private var errorwrapper: errorWrapper?
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           
+                SplashScreenView()
+            
         }
     }
 }
