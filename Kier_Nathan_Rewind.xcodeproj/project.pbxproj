@@ -272,6 +272,7 @@
 		D88AF79F28AAE935009A961C /* Health */ = {
 			isa = PBXGroup;
 			children = (
+				D8C22B5828DCB73A005CA6AE /* Health */,
 				D88AF7A028AAE94D009A961C /* HealthInfoStore.swift */,
 				D88AF7A228AAEB2D009A961C /* distanceDataView.swift */,
 				D88AF7A428AAEDA9009A961C /* GraphView.swift */,
@@ -289,6 +290,14 @@
 				D88AF7A928AAEEB0009A961C /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8C22B5828DCB73A005CA6AE /* Health */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Health;
+			path = ../../../../.Trash/Health;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
