@@ -27,7 +27,7 @@ class HealthStore {
     
     func calculateSteps(completion: @escaping (HKStatisticsCollection?) -> Void) {
         
-        let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
+        let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
         
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
         
@@ -49,9 +49,32 @@ class HealthStore {
         
     }
     
+    func calculateWR(completion: @escaping (HKStatisticsCollection?) -> Void) {
+        let move = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
+        
+        let startingDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
+        
+        let anchoredDate = Date.mondayAt12AM()
+        
+        let daily2 = DateComponents(day: 1)
+        
+        let predicate2 = HKQuery.predicateForSamples(withStart: startingDate, end: Date(), options: .strictStartDate)
+        
+        query = HKStatisticsCollectionQuery(quantityType: move, quantitySamplePredicate: predicate2, options: .cumulativeSum, anchorDate: anchoredDate, intervalComponents: daily2)
+        
+        query!.initialResultsHandler = { query, statisticsCollection, error in
+            completion(statisticsCollection)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+        
+    }
+    
     func requestAuthorization(completion: @escaping (Bool) -> Void) {
         
-        let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
+        let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
         
         guard let healthStore = self.healthStore else { return completion(false) }
         
@@ -59,6 +82,16 @@ class HealthStore {
             completion(success)
         }
         
+    }
+    
+    func reqAuth2(completion: @escaping (Bool) -> Void) {
+        let move = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
+        
+        guard let healthStore = self.healthStore else { return completion(false) }
+        
+        healthStore.requestAuthorization(toShare: [], read: [move]) { (success, error) in
+            completion(success)
+        }
     }
     
 }

@@ -1,17 +1,17 @@
 //
-//  distanceDataView.swift
+//  moveDataView.swift
 //  Kier_Nathan_Rewind
 //
-//  Created by Nathan Kier on 15/08/2022.
+//  Created by Nathan Kier on 22/09/2022.
 //
 
 import SwiftUI
 import HealthKit
 
-struct distanceDataView: View {
+struct moveDataView: View {
     
     private var healthStore: HealthStore?
-    @State private var steps: [Step] = [Step]()
+    @State private var kilometers: [km] = [km]()
     
     init() {
         healthStore = HealthStore()
@@ -26,8 +26,8 @@ struct distanceDataView: View {
             
             let count = statistics.sumQuantity()?.doubleValue(for: .count())
             
-            let step = Step(count: Int(count ?? 0), date: statistics.startDate)
-            steps.append(step)
+            let step = km(count: Double(count ?? 0), date: statistics.startDate)
+            kilometers.append(step)
         }
         
     }
@@ -36,7 +36,7 @@ struct distanceDataView: View {
         
         NavigationView {
         
-        GraphView(stepsForGraph: steps)
+            GraphingView(kmForGraph: kilometers)
             
         .navigationTitle("Steps Taken This Week")
         }
@@ -60,9 +60,9 @@ struct distanceDataView: View {
         
     }
 }
-
-struct distanceDataView_Previews: PreviewProvider {
+struct moveDataView_Previews: PreviewProvider {
     static var previews: some View {
-        distanceDataView()
+        moveDataView()
+   
     }
 }

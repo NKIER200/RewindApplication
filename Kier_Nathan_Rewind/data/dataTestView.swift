@@ -73,24 +73,25 @@ struct dataTestView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 30)
-            ForEach(vm.filteredArray) { user in
-                VStack(alignment: .leading) {
-                    Text(user.username)
-                    HStack {
-                        Text("Made Shots: \(user.madeShots)")
-                        Text("missed Shots: \(user.missedShots)")
-                        Spacer()
-                        if user.isVerified {
-                            Image(systemName: "clock.circle.fill")
+            VStack (spacing:30) {
+                ForEach(vm.filteredArray) { user in
+                    VStack(alignment: .leading) {
+                        Text(user.username)
+                        HStack {
+                            Text("Made Shots: \(user.madeShots)")
+                            Text("missed Shots: \(user.missedShots)")
+                            Spacer()
+                            if user.isVerified {
+                                Image(systemName: "clock.circle.fill")
+                            }
                         }
+                        
                     }
-                    
+                    .foregroundColor(.red)
+                    .padding()
+                    .background(Color.black.cornerRadius(15))
+                    .padding(.horizontal)
                 }
-                .foregroundColor(.red)
-                .padding()
-                .background(Color.black.cornerRadius(15))
-                .padding(.horizontal)
             }
         }
     }

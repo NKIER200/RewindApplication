@@ -63,6 +63,9 @@
 		D88AF7A528AAEDA9009A961C /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AF7A428AAEDA9009A961C /* GraphView.swift */; };
 		D88AF7A728AAEDD2009A961C /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AF7A628AAEDD2009A961C /* Step.swift */; };
 		D88AF7AA28AAEEB0009A961C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AF7A928AAEEB0009A961C /* HealthKit.framework */; };
+		D8C22B0928DCA40E005CA6AE /* moveDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22B0828DCA40E005CA6AE /* moveDataView.swift */; };
+		D8C22B0B28DCA467005CA6AE /* km.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22B0A28DCA467005CA6AE /* km.swift */; };
+		D8C22B0D28DCA5B5005CA6AE /* GraphingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22B0C28DCA5B5005CA6AE /* GraphingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +127,9 @@
 		D88AF7A428AAEDA9009A961C /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		D88AF7A628AAEDD2009A961C /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		D88AF7A928AAEEB0009A961C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		D8C22B0828DCA40E005CA6AE /* moveDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moveDataView.swift; sourceTree = "<group>"; };
+		D8C22B0A28DCA467005CA6AE /* km.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = km.swift; sourceTree = "<group>"; };
+		D8C22B0C28DCA5B5005CA6AE /* GraphingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +276,9 @@
 				D88AF7A228AAEB2D009A961C /* distanceDataView.swift */,
 				D88AF7A428AAEDA9009A961C /* GraphView.swift */,
 				D88AF7A628AAEDD2009A961C /* Step.swift */,
+				D8C22B0828DCA40E005CA6AE /* moveDataView.swift */,
+				D8C22B0A28DCA467005CA6AE /* km.swift */,
+				D8C22B0C28DCA5B5005CA6AE /* GraphingView.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -384,6 +393,7 @@
 				D87E2FF32859160B00735AF7 /* chatsView.swift in Sources */,
 				D87B9BF82879E14700E2D3EF /* formManage.swift in Sources */,
 				D87E300F2860DB1C00735AF7 /* ArcForClock.swift in Sources */,
+				D8C22B0D28DCA5B5005CA6AE /* GraphingView.swift in Sources */,
 				D87E2FDC2859141700735AF7 /* homeView.swift in Sources */,
 				D87B9BEE2874B79B00E2D3EF /* botView.swift in Sources */,
 				D88AF79728A27234009A961C /* testingarrayView.swift in Sources */,
@@ -394,6 +404,7 @@
 				D87E3005285E34DF00735AF7 /* circleImageDos.swift in Sources */,
 				D88AF7A128AAE94D009A961C /* HealthInfoStore.swift in Sources */,
 				D87E3011286675DE00735AF7 /* SpeechRecognizer.swift in Sources */,
+				D8C22B0B28DCA467005CA6AE /* km.swift in Sources */,
 				D87B9BFC287A01CD00E2D3EF /* loginFormManager.swift in Sources */,
 				D87E2FEF285915BC00735AF7 /* TILS.swift in Sources */,
 				D87E2FE92859150800735AF7 /* AVPlayer+Ding.swift in Sources */,
@@ -405,6 +416,7 @@
 				D87E2FE5285914B500735AF7 /* Theme.swift in Sources */,
 				D88AF79E28AAE6C3009A961C /* cameraView.swift in Sources */,
 				D88AF79928A272F3009A961C /* testingeditView.swift in Sources */,
+				D8C22B0928DCA40E005CA6AE /* moveDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
