@@ -21,7 +21,7 @@ struct GraphingView: View {
     let kmForGraph: [km]
     
     var totalStepsTaken: Int {
-        kmForGraph.map { $0.count }.reduce(0,+)
+        kmForGraph.map { Int($0.count) }.reduce(0,+)
     }
     
     var body: some View {
