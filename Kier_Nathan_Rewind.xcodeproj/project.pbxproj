@@ -66,7 +66,31 @@
 		D8C22B0928DCA40E005CA6AE /* moveDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22B0828DCA40E005CA6AE /* moveDataView.swift */; };
 		D8C22B0B28DCA467005CA6AE /* km.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22B0A28DCA467005CA6AE /* km.swift */; };
 		D8C22B0D28DCA5B5005CA6AE /* GraphingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22B0C28DCA5B5005CA6AE /* GraphingView.swift */; };
+		D8C22BDB28DD2177005CA6AE /* Rewind_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22BDA28DD2177005CA6AE /* Rewind_WatchApp.swift */; };
+		D8C22BDD28DD2177005CA6AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22BDC28DD2177005CA6AE /* ContentView.swift */; };
+		D8C22BDF28DD217A005CA6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C22BDE28DD217A005CA6AE /* Assets.xcassets */; };
+		D8C22BE228DD217A005CA6AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C22BE128DD217A005CA6AE /* Preview Assets.xcassets */; };
+		D8C22BEC28DD217A005CA6AE /* Rewind_Watch_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22BEB28DD217A005CA6AE /* Rewind_Watch_Watch_AppTests.swift */; };
+		D8C22BF628DD217B005CA6AE /* Rewind_Watch_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22BF528DD217B005CA6AE /* Rewind_Watch_Watch_AppUITests.swift */; };
+		D8C22BF828DD217B005CA6AE /* Rewind_Watch_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22BF728DD217B005CA6AE /* Rewind_Watch_Watch_AppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8C22BE828DD217A005CA6AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D87E2FC1285913C000735AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8C22BD728DD2177005CA6AE;
+			remoteInfo = "Rewind_Watch Watch App";
+		};
+		D8C22BF228DD217A005CA6AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D87E2FC1285913C000735AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8C22BD728DD2177005CA6AE;
+			remoteInfo = "Rewind_Watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D87B9BE0287369E100E2D3EF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -130,6 +154,16 @@
 		D8C22B0828DCA40E005CA6AE /* moveDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moveDataView.swift; sourceTree = "<group>"; };
 		D8C22B0A28DCA467005CA6AE /* km.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = km.swift; sourceTree = "<group>"; };
 		D8C22B0C28DCA5B5005CA6AE /* GraphingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphingView.swift; sourceTree = "<group>"; };
+		D8C22BD828DD2177005CA6AE /* Rewind_Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rewind_Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C22BDA28DD2177005CA6AE /* Rewind_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewind_WatchApp.swift; sourceTree = "<group>"; };
+		D8C22BDC28DD2177005CA6AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D8C22BDE28DD217A005CA6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8C22BE128DD217A005CA6AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8C22BE728DD217A005CA6AE /* Rewind_Watch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rewind_Watch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C22BEB28DD217A005CA6AE /* Rewind_Watch_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewind_Watch_Watch_AppTests.swift; sourceTree = "<group>"; };
+		D8C22BF128DD217A005CA6AE /* Rewind_Watch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rewind_Watch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C22BF528DD217B005CA6AE /* Rewind_Watch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewind_Watch_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		D8C22BF728DD217B005CA6AE /* Rewind_Watch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewind_Watch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +172,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				D88AF7AA28AAEEB0009A961C /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C22BD528DD2177005CA6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C22BE428DD217A005CA6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C22BEE28DD217A005CA6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				D87E2FCB285913C000735AF7 /* Kier_Nathan_Rewind */,
+				D8C22BD928DD2177005CA6AE /* Rewind_Watch Watch App */,
+				D8C22BEA28DD217A005CA6AE /* Rewind_Watch Watch AppTests */,
+				D8C22BF428DD217B005CA6AE /* Rewind_Watch Watch AppUITests */,
 				D87E2FCA285913C000735AF7 /* Products */,
 				D88AF7A828AAEEB0009A961C /* Frameworks */,
 			);
@@ -187,6 +245,9 @@
 			isa = PBXGroup;
 			children = (
 				D87E2FC9285913C000735AF7 /* Kier_Nathan_Rewind.app */,
+				D8C22BD828DD2177005CA6AE /* Rewind_Watch Watch App.app */,
+				D8C22BE728DD217A005CA6AE /* Rewind_Watch Watch AppTests.xctest */,
+				D8C22BF128DD217A005CA6AE /* Rewind_Watch Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +255,7 @@
 		D87E2FCB285913C000735AF7 /* Kier_Nathan_Rewind */ = {
 			isa = PBXGroup;
 			children = (
+				D8C22BD328DD1FEF005CA6AE /* watch */,
 				D88AF79F28AAE935009A961C /* Health */,
 				D88AF79A28AAE48A009A961C /* Kier_Nathan_Rewind.entitlements */,
 				D87B9BF42879DEE200E2D3EF /* form */,
@@ -300,6 +362,49 @@
 			path = ../../../../.Trash/Health;
 			sourceTree = "<group>";
 		};
+		D8C22BD328DD1FEF005CA6AE /* watch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = watch;
+			sourceTree = "<group>";
+		};
+		D8C22BD928DD2177005CA6AE /* Rewind_Watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				D8C22BDA28DD2177005CA6AE /* Rewind_WatchApp.swift */,
+				D8C22BDC28DD2177005CA6AE /* ContentView.swift */,
+				D8C22BDE28DD217A005CA6AE /* Assets.xcassets */,
+				D8C22BE028DD217A005CA6AE /* Preview Content */,
+			);
+			path = "Rewind_Watch Watch App";
+			sourceTree = "<group>";
+		};
+		D8C22BE028DD217A005CA6AE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D8C22BE128DD217A005CA6AE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8C22BEA28DD217A005CA6AE /* Rewind_Watch Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8C22BEB28DD217A005CA6AE /* Rewind_Watch_Watch_AppTests.swift */,
+			);
+			path = "Rewind_Watch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		D8C22BF428DD217B005CA6AE /* Rewind_Watch Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8C22BF528DD217B005CA6AE /* Rewind_Watch_Watch_AppUITests.swift */,
+				D8C22BF728DD217B005CA6AE /* Rewind_Watch_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Rewind_Watch Watch AppUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +425,59 @@
 			productReference = D87E2FC9285913C000735AF7 /* Kier_Nathan_Rewind.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D8C22BD728DD2177005CA6AE /* Rewind_Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C22BF928DD217B005CA6AE /* Build configuration list for PBXNativeTarget "Rewind_Watch Watch App" */;
+			buildPhases = (
+				D8C22BD428DD2177005CA6AE /* Sources */,
+				D8C22BD528DD2177005CA6AE /* Frameworks */,
+				D8C22BD628DD2177005CA6AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rewind_Watch Watch App";
+			productName = "Rewind_Watch Watch App";
+			productReference = D8C22BD828DD2177005CA6AE /* Rewind_Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8C22BE628DD217A005CA6AE /* Rewind_Watch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C22BFC28DD217B005CA6AE /* Build configuration list for PBXNativeTarget "Rewind_Watch Watch AppTests" */;
+			buildPhases = (
+				D8C22BE328DD217A005CA6AE /* Sources */,
+				D8C22BE428DD217A005CA6AE /* Frameworks */,
+				D8C22BE528DD217A005CA6AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8C22BE928DD217A005CA6AE /* PBXTargetDependency */,
+			);
+			name = "Rewind_Watch Watch AppTests";
+			productName = "Rewind_Watch Watch AppTests";
+			productReference = D8C22BE728DD217A005CA6AE /* Rewind_Watch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8C22BF028DD217A005CA6AE /* Rewind_Watch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C22BFF28DD217B005CA6AE /* Build configuration list for PBXNativeTarget "Rewind_Watch Watch AppUITests" */;
+			buildPhases = (
+				D8C22BED28DD217A005CA6AE /* Sources */,
+				D8C22BEE28DD217A005CA6AE /* Frameworks */,
+				D8C22BEF28DD217A005CA6AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8C22BF328DD217A005CA6AE /* PBXTargetDependency */,
+			);
+			name = "Rewind_Watch Watch AppUITests";
+			productName = "Rewind_Watch Watch AppUITests";
+			productReference = D8C22BF128DD217A005CA6AE /* Rewind_Watch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -332,6 +490,17 @@
 				TargetAttributes = {
 					D87E2FC8285913C000735AF7 = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					D8C22BD728DD2177005CA6AE = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					D8C22BE628DD217A005CA6AE = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = D8C22BD728DD2177005CA6AE;
+					};
+					D8C22BF028DD217A005CA6AE = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = D8C22BD728DD2177005CA6AE;
 					};
 				};
 			};
@@ -349,6 +518,9 @@
 			projectRoot = "";
 			targets = (
 				D87E2FC8285913C000735AF7 /* Kier_Nathan_Rewind */,
+				D8C22BD728DD2177005CA6AE /* Rewind_Watch Watch App */,
+				D8C22BE628DD217A005CA6AE /* Rewind_Watch Watch AppTests */,
+				D8C22BF028DD217A005CA6AE /* Rewind_Watch Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -360,6 +532,29 @@
 			files = (
 				D87E2FD4285913C200735AF7 /* Preview Assets.xcassets in Resources */,
 				D87E2FD1285913C200735AF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C22BD628DD2177005CA6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C22BE228DD217A005CA6AE /* Preview Assets.xcassets in Resources */,
+				D8C22BDF28DD217A005CA6AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C22BE528DD217A005CA6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C22BEF28DD217A005CA6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +624,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8C22BD428DD2177005CA6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C22BDD28DD2177005CA6AE /* ContentView.swift in Sources */,
+				D8C22BDB28DD2177005CA6AE /* Rewind_WatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C22BE328DD217A005CA6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C22BEC28DD217A005CA6AE /* Rewind_Watch_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C22BED28DD217A005CA6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C22BF628DD217B005CA6AE /* Rewind_Watch_Watch_AppUITests.swift in Sources */,
+				D8C22BF828DD217B005CA6AE /* Rewind_Watch_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8C22BE928DD217A005CA6AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8C22BD728DD2177005CA6AE /* Rewind_Watch Watch App */;
+			targetProxy = D8C22BE828DD217A005CA6AE /* PBXContainerItemProxy */;
+		};
+		D8C22BF328DD217A005CA6AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8C22BD728DD2177005CA6AE /* Rewind_Watch Watch App */;
+			targetProxy = D8C22BF228DD217A005CA6AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D87E2FD5285913C200735AF7 /* Debug */ = {
@@ -616,6 +850,150 @@
 			};
 			name = Release;
 		};
+		D8C22BFA28DD217B005CA6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rewind_Watch Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Rewind_Watch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		D8C22BFB28DD217B005CA6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Rewind_Watch Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Rewind_Watch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		D8C22BFD28DD217B005CA6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "GCU.Rewind-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rewind_Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rewind_Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		D8C22BFE28DD217B005CA6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "GCU.Rewind-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rewind_Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rewind_Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		D8C22C0028DD217B005CA6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GZ69AQFF9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "GCU.Rewind-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Rewind_Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		D8C22C0128DD217B005CA6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GZ69AQFF9N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "GCU.Rewind-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Rewind_Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -633,6 +1011,33 @@
 			buildConfigurations = (
 				D87E2FD8285913C200735AF7 /* Debug */,
 				D87E2FD9285913C200735AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C22BF928DD217B005CA6AE /* Build configuration list for PBXNativeTarget "Rewind_Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C22BFA28DD217B005CA6AE /* Debug */,
+				D8C22BFB28DD217B005CA6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C22BFC28DD217B005CA6AE /* Build configuration list for PBXNativeTarget "Rewind_Watch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C22BFD28DD217B005CA6AE /* Debug */,
+				D8C22BFE28DD217B005CA6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C22BFF28DD217B005CA6AE /* Build configuration list for PBXNativeTarget "Rewind_Watch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C22C0028DD217B005CA6AE /* Debug */,
+				D8C22C0128DD217B005CA6AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
