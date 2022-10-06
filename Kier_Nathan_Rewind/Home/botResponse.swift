@@ -52,6 +52,8 @@ func getBotResponse(message: String) -> String {
         return "Deez nuts in your mouth"
     } else if tempMess.contains("need help with my knee pain") {
         return "Sorry to hear that, make sure to try deez."
+    }else if tempMess.contains("how are you today?") {
+        return "I am fine, thank you."
     }    else {
         return "Thanks for your question, the helpbot currently does not have an answer for you. Please contact me directly at nkier200@Caledonian.ac.uk"
     }
