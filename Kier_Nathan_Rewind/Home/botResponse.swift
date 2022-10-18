@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+import AVFoundation
 
 func getBotResponse(message: String) -> String {
     let tempMess = message.lowercased()
@@ -28,7 +30,7 @@ func getBotResponse(message: String) -> String {
         return "We would recommend checking out https://thehoopgeeks.com in order to find the shoes for you. If you require more detailed information check out Foot Doctor Zach on Youtube."
     }else if tempMess.contains("shhoe") {
         return "We would recommend checking out https://thehoopgeeks.com in order to find the shoes for you. If you require more detailed information check out Foot Doctor Zach on Youtube."
-    }else if tempMess.contains("rules") {
+    }else if tempMess.contains("the fiba rules") {
         return "Please check out the official FIBA rules if you are unsure on any rules. Looking at you Ruaridh. https://www.fiba.basketball/documents/official-basketball-rules-yellow/2020.pdf"
     }else if tempMess.contains("forward shoe") {
         return "Try any Lebrons, Embiids, Nike Zoom Freak 3, MB.01 (these have 0 ventilation)"
@@ -52,9 +54,27 @@ func getBotResponse(message: String) -> String {
         return "Deez nuts in your mouth"
     } else if tempMess.contains("need help with my knee pain") {
         return "Sorry to hear that, make sure to try deez."
+    } else if tempMess.contains("need to see the goat") {
+        return "test failed"
     }else if tempMess.contains("how are you today?") {
         return "I am fine, thank you."
-    }    else {
+    }else if tempMess.contains("who created you") {
+        return "Him"
+    }else if tempMess.contains("who are you") {
+        return "Who who! Who who"
+    }else if tempMess.contains("i really wanna know") {
+        return "Who who! Who who!"
+    }else if tempMess.contains("what is a screen") {
+        return "A screen is a blocking move used offensively. They stand either beside or nbehind a defender, in order to give their teammate enought time and space to shoot, pass or dribble. It can also be called a pick"
+    }else if tempMess.contains("what is a pick and roll") {
+        return "One player screens a defender, allowing the ball carrying player to dribble inside. then the screening player cuts towards the basket for a pass."
+    }else if tempMess.contains("who will win the NBA Finals 2023") {
+        return "Who else but Big Spo's Tricky Heatles"
+    }else if tempMess.contains("what is your name") {
+        return "Rewind Bot 1.0"
+    }else if tempMess.contains("what is choice") {
+        return "Choice (Basketball Offence, 2021) is a drill involving all 5 players. One stands outside the three-point line in line with the key, two stand in the paint and the other two are on opposite sides of the three-point line. The player at the top (The point Guard) calls either choice one, choice two, four or down. One and two involve the two wing players swapping, one receiving a screen and then the ball from the point guard. 4 involves the two forwards in the paint"
+    }else {
         return "Thanks for your question, the helpbot currently does not have an answer for you. Please contact me directly at nkier200@Caledonian.ac.uk"
     }
 }

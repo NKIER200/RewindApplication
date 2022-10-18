@@ -58,7 +58,7 @@ struct botView: View {
                 Button {
                     sendMessage(message: messageText)
                 } label : {
-                    Image(systemName: "plus")
+                    Image(systemName: "clock.circle.fill")
                 }
                 .font(.system(size: 30))
                 .foregroundColor(Color.red)
