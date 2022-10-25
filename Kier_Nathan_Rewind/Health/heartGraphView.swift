@@ -1,13 +1,13 @@
 //
-//  GraphingView.swift
+//  heartGraphView.swift
 //  Kier_Nathan_Rewind
 //
-//  Created by Nathan Kier on 22/09/2022.
+//  Created by Nathan Kier on 25/10/2022.
 //
 
 import SwiftUI
 
-struct GraphingView: View {
+struct heartGraphView: View {
     
     
     static let dateFormatter: DateFormatter = {
@@ -18,10 +18,10 @@ struct GraphingView: View {
         
     }()
     
-    let milesForGraph: [Mile]
+    let heartForGraph: [heart]
     
-    var totalmiles: Int {
-        milesForGraph.map { Int($0.count) }.reduce(0,+)
+    var totalheart: Int {
+        heartForGraph.map { $0.count }.reduce(0,+)
     }
     
     var body: some View {
@@ -29,18 +29,18 @@ struct GraphingView: View {
             VStack {
                 HStack(alignment: .lastTextBaseline) {
                     
-                    ForEach(milesForGraph, id: \.id) { mile in
+                    ForEach(heartForGraph, id: \.id) { heart in
                         
-                        let yValue = Swift.min(mile.count/0.09, 90)
+                        let yValue = Swift.min(heart.count/1, 90)
                         
                         VStack {
-                            Text("\(mile.count)")
+                            Text("\(heart.count)")
                                 .font(.caption)
                             
                             Rectangle()
-                                .fill(mile.count > 7 ? Color.yellow :Color.red)
+                                .fill(heart.count > 140 ? Color.yellow :Color.red)
                                 .frame(width: 20, height: CGFloat(yValue))
-                            Text("\(mile.date,formatter: Self.dateFormatter)")
+                            Text("\(heart.date,formatter: Self.dateFormatter)")
                                 .font(.caption)
                             
                         }
@@ -48,9 +48,9 @@ struct GraphingView: View {
                     
                 }
                 
-                Text("Keep Pushing, you can do better!").padding(.top, 100)
+                Text("Resting Heartrate: \(totalheart)").padding(.top, 100)
                     .foregroundColor(Color.red)
-                    
+                    .opacity(0.9)
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 .cornerRadius(10)
@@ -59,17 +59,17 @@ struct GraphingView: View {
     }
 }
 
-struct GraphingView_Previews: PreviewProvider {
+struct heartGraphView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let miles = [
-            Mile(count: 3.52, date: Date()),
-            Mile(count: 1.23, date: Date()),
-            Mile(count: 12.23, date: Date()),
-            Mile(count: 52.23, date: Date()),
-            Mile(count: 12.023, date: Date())
+        let restingHeart = [
+            heart(count: 35, date: Date()),
+            heart(count: 123, date: Date()),
+            heart(count: 73, date: Date()),
+            heart(count: 63, date: Date()),
+            heart(count: 12023, date: Date())
                ]
         
-        GraphingView(milesForGraph: miles)
+        heartGraphView(heartForGraph: restingHeart)
     }
 }

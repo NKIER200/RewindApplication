@@ -1,17 +1,17 @@
 //
-//  moveDataView.swift
+//  heartDataView.swift
 //  Kier_Nathan_Rewind
 //
-//  Created by Nathan Kier on 22/09/2022.
+//  Created by Nathan Kier on 25/10/2022.
 //
 
 import SwiftUI
 import HealthKit
 
-struct moveDataView: View {
+struct heartDataView: View {
     
     private var healthStore: HealthStore?
-    @State private var miles: [Mile] = [Mile]()
+    @State private var restingHeart: [heart] = [heart]()
     
     init() {
         healthStore = HealthStore()
@@ -24,10 +24,10 @@ struct moveDataView: View {
         
         statisticsCollection.enumerateStatistics(from: startDate, to: endDate) { (statistics, stop) in
             
-            let count = statistics.sumQuantity()?.doubleValue(for: .mile())
+            let count = statistics.sumQuantity()?.doubleValue(for: .count())
             
-            let mile = Mile(count: Double(count ?? 0), date: statistics.startDate)
-            miles.append(mile)
+            let hearts = heart(count: Int(count ?? 0), date: statistics.startDate)
+            restingHeart.append(hearts)
         }
         
     }
@@ -36,17 +36,17 @@ struct moveDataView: View {
         
         NavigationView {
         
-            GraphingView(milesForGraph: miles)
+            heartGraphView(heartForGraph: restingHeart)
             
-        .navigationTitle("Miles This Week")
+        .navigationTitle("Resting Heartrate This Week")
         }
        
         
             .onAppear {
                 if let healthStore = healthStore {
-                    healthStore.reqAuth2 { success in
+                    healthStore.reqAuth3 { success in
                         if success {
-                            healthStore.calculateWR { statisticsCollection in
+                            healthStore.calculateHeart { statisticsCollection in
                                 if let statisticsCollection = statisticsCollection {
                                     // update the UI
                                     updateUIFromStatistics(statisticsCollection)
@@ -60,9 +60,9 @@ struct moveDataView: View {
         
     }
 }
-struct moveDataView_Previews: PreviewProvider {
+struct heartDataView_Previews: PreviewProvider {
     static var previews: some View {
-        moveDataView()
+        heartDataView()
    
     }
 }

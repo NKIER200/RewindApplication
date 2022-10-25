@@ -51,6 +51,12 @@
 		D87E3011286675DE00735AF7 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E3010286675DE00735AF7 /* SpeechRecognizer.swift */; };
 		D87E301328667ADF00735AF7 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E301228667ADF00735AF7 /* HistoryView.swift */; };
 		D87E30152869FD8E00735AF7 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E30142869FD8E00735AF7 /* LogView.swift */; };
+		D88973A329080A430023B18C /* heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88973A229080A430023B18C /* heart.swift */; };
+		D88973A529080AD80023B18C /* heartGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88973A429080AD80023B18C /* heartGraphView.swift */; };
+		D88973A729080B460023B18C /* heartDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88973A629080B460023B18C /* heartDataView.swift */; };
+		D88973A929086A7C0023B18C /* Calorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88973A829086A7C0023B18C /* Calorie.swift */; };
+		D88973AB290882E00023B18C /* calorieDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88973AA290882E00023B18C /* calorieDataView.swift */; };
+		D88973AD290883090023B18C /* calorieGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88973AC290883090023B18C /* calorieGraphView.swift */; };
 		D88AF78B2884A108009A961C /* videoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AF78A2884A107009A961C /* videoView.swift */; };
 		D88AF78D2884A5BE009A961C /* VidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AF78C2884A5BE009A961C /* VidView.swift */; };
 		D88AF78F288F143E009A961C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AF78E288F143E009A961C /* SplashScreenView.swift */; };
@@ -64,7 +70,7 @@
 		D88AF7A728AAEDD2009A961C /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AF7A628AAEDD2009A961C /* Step.swift */; };
 		D88AF7AA28AAEEB0009A961C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AF7A928AAEEB0009A961C /* HealthKit.framework */; };
 		D8C22B0928DCA40E005CA6AE /* moveDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22B0828DCA40E005CA6AE /* moveDataView.swift */; };
-		D8C22B0B28DCA467005CA6AE /* km.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22B0A28DCA467005CA6AE /* km.swift */; };
+		D8C22B0B28DCA467005CA6AE /* Mile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22B0A28DCA467005CA6AE /* Mile.swift */; };
 		D8C22B0D28DCA5B5005CA6AE /* GraphingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22B0C28DCA5B5005CA6AE /* GraphingView.swift */; };
 		D8C22BDB28DD2177005CA6AE /* Rewind_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22BDA28DD2177005CA6AE /* Rewind_WatchApp.swift */; };
 		D8C22BDD28DD2177005CA6AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C22BDC28DD2177005CA6AE /* ContentView.swift */; };
@@ -138,6 +144,12 @@
 		D87E3010286675DE00735AF7 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		D87E301228667ADF00735AF7 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		D87E30142869FD8E00735AF7 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		D88973A229080A430023B18C /* heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heart.swift; sourceTree = "<group>"; };
+		D88973A429080AD80023B18C /* heartGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartGraphView.swift; sourceTree = "<group>"; };
+		D88973A629080B460023B18C /* heartDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartDataView.swift; sourceTree = "<group>"; };
+		D88973A829086A7C0023B18C /* Calorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calorie.swift; sourceTree = "<group>"; };
+		D88973AA290882E00023B18C /* calorieDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calorieDataView.swift; sourceTree = "<group>"; };
+		D88973AC290883090023B18C /* calorieGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = calorieGraphView.swift; path = Kier_Nathan_Rewind/Health/calorieGraphView.swift; sourceTree = SOURCE_ROOT; };
 		D88AF78A2884A107009A961C /* videoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoView.swift; sourceTree = "<group>"; };
 		D88AF78C2884A5BE009A961C /* VidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VidView.swift; sourceTree = "<group>"; };
 		D88AF78E288F143E009A961C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
@@ -152,7 +164,7 @@
 		D88AF7A628AAEDD2009A961C /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		D88AF7A928AAEEB0009A961C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		D8C22B0828DCA40E005CA6AE /* moveDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moveDataView.swift; sourceTree = "<group>"; };
-		D8C22B0A28DCA467005CA6AE /* km.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = km.swift; sourceTree = "<group>"; };
+		D8C22B0A28DCA467005CA6AE /* Mile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mile.swift; sourceTree = "<group>"; };
 		D8C22B0C28DCA5B5005CA6AE /* GraphingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphingView.swift; sourceTree = "<group>"; };
 		D8C22BD828DD2177005CA6AE /* Rewind_Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rewind_Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C22BDA28DD2177005CA6AE /* Rewind_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewind_WatchApp.swift; sourceTree = "<group>"; };
@@ -336,12 +348,18 @@
 			children = (
 				D8C22B5828DCB73A005CA6AE /* Health */,
 				D88AF7A028AAE94D009A961C /* HealthInfoStore.swift */,
+				D88AF7A628AAEDD2009A961C /* Step.swift */,
 				D88AF7A228AAEB2D009A961C /* distanceDataView.swift */,
 				D88AF7A428AAEDA9009A961C /* GraphView.swift */,
-				D88AF7A628AAEDD2009A961C /* Step.swift */,
+				D8C22B0A28DCA467005CA6AE /* Mile.swift */,
 				D8C22B0828DCA40E005CA6AE /* moveDataView.swift */,
-				D8C22B0A28DCA467005CA6AE /* km.swift */,
 				D8C22B0C28DCA5B5005CA6AE /* GraphingView.swift */,
+				D88973A229080A430023B18C /* heart.swift */,
+				D88973A629080B460023B18C /* heartDataView.swift */,
+				D88973A429080AD80023B18C /* heartGraphView.swift */,
+				D88973A829086A7C0023B18C /* Calorie.swift */,
+				D88973AA290882E00023B18C /* calorieDataView.swift */,
+				D88973AC290883090023B18C /* calorieGraphView.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -576,6 +594,7 @@
 				D88AF79328A1270C009A961C /* userArrayView.swift in Sources */,
 				D87E2FFD285916C600735AF7 /* MeetingHeaderView.swift in Sources */,
 				D87E2FCD285913C000735AF7 /* Kier_Nathan_RewindApp.swift in Sources */,
+				D88973A929086A7C0023B18C /* Calorie.swift in Sources */,
 				D87B9BF62879DFC400E2D3EF /* formModel.swift in Sources */,
 				D87E2FFB2859169700735AF7 /* ThemePicker.swift in Sources */,
 				D87E2FF72859165700735AF7 /* DetailEditView.swift in Sources */,
@@ -588,17 +607,20 @@
 				D87E2FE22859148B00735AF7 /* accountView.swift in Sources */,
 				D87E3001285CD2D100735AF7 /* History.swift in Sources */,
 				D87E30152869FD8E00735AF7 /* LogView.swift in Sources */,
+				D88973A729080B460023B18C /* heartDataView.swift in Sources */,
 				D87B9BE828737C0C00E2D3EF /* systemThemeManager.swift in Sources */,
 				D87E2FE7285914D800735AF7 /* DailyChat.swift in Sources */,
 				D88AF78D2884A5BE009A961C /* VidView.swift in Sources */,
 				D88AF78B2884A108009A961C /* videoView.swift in Sources */,
 				D87E2FF1285915EA00735AF7 /* CardView.swift in Sources */,
 				D87E2FF92859167A00735AF7 /* ThemeView.swift in Sources */,
+				D88973AB290882E00023B18C /* calorieDataView.swift in Sources */,
 				D87E2FF32859160B00735AF7 /* chatsView.swift in Sources */,
 				D87B9BF82879E14700E2D3EF /* formManage.swift in Sources */,
 				D87E300F2860DB1C00735AF7 /* ArcForClock.swift in Sources */,
 				D8C22B0D28DCA5B5005CA6AE /* GraphingView.swift in Sources */,
 				D87E2FDC2859141700735AF7 /* homeView.swift in Sources */,
+				D88973A529080AD80023B18C /* heartGraphView.swift in Sources */,
 				D87B9BEE2874B79B00E2D3EF /* botView.swift in Sources */,
 				D88AF79728A27234009A961C /* testingarrayView.swift in Sources */,
 				D88AF7A728AAEDD2009A961C /* Step.swift in Sources */,
@@ -608,8 +630,9 @@
 				D87E3005285E34DF00735AF7 /* circleImageDos.swift in Sources */,
 				D88AF7A128AAE94D009A961C /* HealthInfoStore.swift in Sources */,
 				D87E3011286675DE00735AF7 /* SpeechRecognizer.swift in Sources */,
-				D8C22B0B28DCA467005CA6AE /* km.swift in Sources */,
+				D8C22B0B28DCA467005CA6AE /* Mile.swift in Sources */,
 				D87B9BFC287A01CD00E2D3EF /* loginFormManager.swift in Sources */,
+				D88973A329080A430023B18C /* heart.swift in Sources */,
 				D87E2FEF285915BC00735AF7 /* TILS.swift in Sources */,
 				D87E2FE92859150800735AF7 /* AVPlayer+Ding.swift in Sources */,
 				D87E2FFF285916DD00735AF7 /* MeetingFooterView.swift in Sources */,
@@ -619,6 +642,7 @@
 				D87B9BE1287369E100E2D3EF /* SettingsView.swift in Sources */,
 				D87E2FE5285914B500735AF7 /* Theme.swift in Sources */,
 				D88AF79E28AAE6C3009A961C /* cameraView.swift in Sources */,
+				D88973AD290883090023B18C /* calorieGraphView.swift in Sources */,
 				D88AF79928A272F3009A961C /* testingeditView.swift in Sources */,
 				D8C22B0928DCA40E005CA6AE /* moveDataView.swift in Sources */,
 			);

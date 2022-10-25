@@ -52,6 +52,18 @@ struct testView: View {
                     Image(systemName: "heart")
                     Text("Kilometers covered")
                 }
+            
+            heartDataView()
+                .tabItem {
+                    Image(systemName: "heart")
+                    Text("Resting Heartrate")
+                }
+            
+            calorieDataView()
+                .tabItem {
+                    Image(systemName: "heart")
+                    Text("Active Calories")
+                }
 
             SettingsView(isDarkMode: $isDarkMode, isGrayScale: $isGrayScale, isDeviceSettings: $isDeviceSettings)
                 .tabItem {

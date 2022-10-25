@@ -72,6 +72,52 @@ class HealthStore {
         
     }
     
+    func calculateHeart(completion: @escaping (HKStatisticsCollection?) -> Void) {
+        let heartRate = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.restingHeartRate)!
+        
+        let startingDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
+        
+        let anchoredDate = Date.mondayAt12AM()
+        
+        let daily3 = DateComponents(day: 1)
+        
+        let predicate3 = HKQuery.predicateForSamples(withStart: startingDate, end: Date(), options: .strictStartDate)
+        
+        query = HKStatisticsCollectionQuery(quantityType: heartRate, quantitySamplePredicate: predicate3, options: .discreteMostRecent, anchorDate: anchoredDate, intervalComponents: daily3)
+        
+        query!.initialResultsHandler = { query, statisticsCollection, error in
+            completion(statisticsCollection)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+        
+    }
+    
+    func calculateCalories(completion: @escaping (HKStatisticsCollection?) -> Void) {
+        let kcal = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.activeEnergyBurned)!
+        
+        let startingDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())
+        
+        let anchoredDate = Date.mondayAt12AM()
+        
+        let daily4 = DateComponents(day: 1)
+        
+        let predicate4 = HKQuery.predicateForSamples(withStart: startingDate, end: Date(), options: .strictStartDate)
+        
+        query = HKStatisticsCollectionQuery(quantityType: kcal, quantitySamplePredicate: predicate4, options: .discreteMostRecent, anchorDate: anchoredDate, intervalComponents: daily4)
+        
+        query!.initialResultsHandler = { query, statisticsCollection, error in
+            completion(statisticsCollection)
+        }
+        
+        if let healthStore = healthStore, let query = self.query {
+            healthStore.execute(query)
+        }
+        
+    }
+    
     func requestAuthorization(completion: @escaping (Bool) -> Void) {
         
         let stepType = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
@@ -93,5 +139,24 @@ class HealthStore {
             completion(success)
         }
     }
+    func reqAuth3(completion: @escaping (Bool) -> Void) {
+        let heartRate = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.restingHeartRate)!
+        
+        guard let healthStore = self.healthStore else { return completion(false) }
+        
+        healthStore.requestAuthorization(toShare: [], read: [heartRate]) { (success, error) in
+            completion(success)
+        }
+    }
     
+    func reqAuth4(completion: @escaping (Bool) -> Void) {
+        let kcal = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.activeEnergyBurned)!
+        
+        guard let healthStore = self.healthStore else { return completion(false) }
+        
+        healthStore.requestAuthorization(toShare: [], read: [kcal]) { (success, error) in
+            completion(success)
+        }
+    }
+
 }

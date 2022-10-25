@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct km: Identifiable {
+struct Mile: Identifiable {
     let id = UUID()
     let count: Double
     let date: Date
