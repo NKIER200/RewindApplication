@@ -26,8 +26,8 @@ struct moveDataView: View {
             
             let count = statistics.sumQuantity()?.doubleValue(for: .count())
             
-            let step = km(count: Double(count ?? 0), date: statistics.startDate)
-            kilometers.append(step)
+            let kmss = km(count: Double(count ?? 0), date: statistics.startDate)
+            kilometers.append(kmss)
         }
         
     }
@@ -38,15 +38,15 @@ struct moveDataView: View {
         
             GraphingView(kmForGraph: kilometers)
             
-        .navigationTitle("Steps Taken This Week")
+        .navigationTitle("Kilometers Covered This Week")
         }
        
         
             .onAppear {
                 if let healthStore = healthStore {
-                    healthStore.requestAuthorization { success in
+                    healthStore.reqAuth2 { success in
                         if success {
-                            healthStore.calculateSteps { statisticsCollection in
+                            healthStore.calculateWR { statisticsCollection in
                                 if let statisticsCollection = statisticsCollection {
                                     // update the UI
                                     updateUIFromStatistics(statisticsCollection)

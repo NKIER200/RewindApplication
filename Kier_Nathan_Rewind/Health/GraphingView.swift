@@ -20,7 +20,7 @@ struct GraphingView: View {
     
     let kmForGraph: [km]
     
-    var totalStepsTaken: Int {
+    var totalkms: Int {
         kmForGraph.map { Int($0.count) }.reduce(0,+)
     }
     
@@ -31,14 +31,14 @@ struct GraphingView: View {
                     
                     ForEach(kmForGraph, id: \.id) { km in
                         
-                        let yValue = Swift.min(km.count/20, 300)
+                        let yValue = Swift.min(km.count/0.09, 90)
                         
                         VStack {
                             Text("\(km.count)")
                                 .font(.caption)
                             
                             Rectangle()
-                                .fill(km.count > 7000 ? Color.yellow :Color.red)
+                                .fill(km.count > 7 ? Color.yellow :Color.red)
                                 .frame(width: 20, height: CGFloat(yValue))
                             Text("\(km.date,formatter: Self.dateFormatter)")
                                 .font(.caption)
@@ -48,7 +48,7 @@ struct GraphingView: View {
                     
                 }
                 
-                Text("Total Steps: \(totalStepsTaken)").padding(.top, 100)
+                Text("Total Kilometers: \(totalkms)").padding(.top, 100)
                     .foregroundColor(Color.red)
                     .opacity(0.9)
                 
@@ -63,11 +63,11 @@ struct GraphingView_Previews: PreviewProvider {
     static var previews: some View {
         
         let kilometers = [
-                   km(count: 3452, date: Date()),
-                   km(count: 123, date: Date()),
-                   km(count: 1223, date: Date()),
-                   km(count: 5223, date: Date()),
-                   km(count: 12023, date: Date())
+            km(count: 3.52, date: Date()),
+            km(count: 1.23, date: Date()),
+            km(count: 12.23, date: Date()),
+            km(count: 52.23, date: Date()),
+            km(count: 12.023, date: Date())
                ]
         
         GraphingView(kmForGraph: kilometers)

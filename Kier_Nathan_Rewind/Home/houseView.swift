@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct houseView: View {
+    
+    @State private var newsText = "Enter this weeks news"
     var body: some View {
         ScrollView {
             VStack {
@@ -27,7 +29,7 @@ struct houseView: View {
                         
 
                     HStack {
-                        Text("Are you ready, to Improve?")
+                        TextEditor(text: $newsText)
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
                         Spacer()

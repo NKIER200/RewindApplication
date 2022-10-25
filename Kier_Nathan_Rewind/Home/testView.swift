@@ -46,6 +46,12 @@ struct testView: View {
                     Image(systemName: "heart")
                     Text("Distance")
                 }
+            
+            moveDataView()
+                .tabItem {
+                    Image(systemName: "heart")
+                    Text("Kilometers covered")
+                }
 
             SettingsView(isDarkMode: $isDarkMode, isGrayScale: $isGrayScale, isDeviceSettings: $isDeviceSettings)
                 .tabItem {
