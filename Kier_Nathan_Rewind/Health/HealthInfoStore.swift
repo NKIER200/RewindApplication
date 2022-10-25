@@ -4,6 +4,7 @@
 //
 //  Created by Nathan Kier on 15/08/2022.
 // mine
+//health information store. Hellish place
 
 import Foundation
 import HealthKit
