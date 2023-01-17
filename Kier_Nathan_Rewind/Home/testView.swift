@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import OpenAISwift
 
 struct testView: View {
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var entrys: FetchedResults<ToDoItem>
     @AppStorage("isDarkMode") private var isDarkMode = false
     @AppStorage("isDeviceSettings") private var isDeviceSettings = false
     @AppStorage("isGrayScale") private var isGrayScale = false
@@ -20,11 +23,7 @@ struct testView: View {
                     Text("Home")
                 }
             
-            testingarrayView(scrum: UserArray.sampleData[0])
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Account")
-                }
+            
             botView()
                 .tabItem {
                     Image(systemName: "clock.circle")
@@ -36,11 +35,12 @@ struct testView: View {
                     Image(systemName: "play")
                     Text("Videos")
                 }
-            formView {_ in}
+            todoentryView()
                 .tabItem {
                     Image(systemName: "message")
                     Text("Chat")
                 }
+            
             distanceDataView()
                 .tabItem {
                     Image(systemName: "heart")
@@ -64,7 +64,14 @@ struct testView: View {
                     Image(systemName: "heart")
                     Text("Active Calories")
                 }
-
+            
+            APIcontentView()
+                .tabItem {
+                    Image(systemName: "person.wave.2")
+                    Text("ChatGPT")
+                }
+            
+            
             SettingsView(isDarkMode: $isDarkMode, isGrayScale: $isGrayScale, isDeviceSettings: $isDeviceSettings)
                 .tabItem {
                     Image(systemName: "gear")

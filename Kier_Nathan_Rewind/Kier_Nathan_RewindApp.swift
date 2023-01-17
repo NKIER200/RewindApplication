@@ -11,10 +11,13 @@ import SwiftUI
 struct Kier_Nathan_RewindApp: App {
     @State private var store = ChatStore()
     @State private var errorwrapper: errorWrapper?
+    @StateObject private var dataController = DataController()
     var body: some Scene {
+       
         WindowGroup {
            
                 SplashScreenView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
             
         }
     }
