@@ -94,6 +94,9 @@
 		D8D788372956845A00BFBD34 /* TestToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D788362956845A00BFBD34 /* TestToView.swift */; };
 		D8D788392956881400BFBD34 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D788382956881300BFBD34 /* CoreData.framework */; };
 		D8D7883C29568B6000BFBD34 /* testModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8D7883A29568B6000BFBD34 /* testModel.xcdatamodeld */; };
+		D8FB22592997C00500B85680 /* intentClassifier 2.0.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8FB22582997C00500B85680 /* intentClassifier 2.0.mlmodel */; };
+		D8FB225B2997C84900B85680 /* testmlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB225A2997C84900B85680 /* testmlView.swift */; };
+		D8FB225D299A6B3D00B85680 /* intentClassifier4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8FB225C299A6B3D00B85680 /* intentClassifier4.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +208,9 @@
 		D8D788362956845A00BFBD34 /* TestToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestToView.swift; sourceTree = "<group>"; };
 		D8D788382956881300BFBD34 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D8D7883B29568B6000BFBD34 /* testModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testModel.xcdatamodel; sourceTree = "<group>"; };
+		D8FB22582997C00500B85680 /* intentClassifier 2.0.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "intentClassifier 2.0.mlmodel"; sourceTree = "<group>"; };
+		D8FB225A2997C84900B85680 /* testmlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testmlView.swift; sourceTree = "<group>"; };
+		D8FB225C299A6B3D00B85680 /* intentClassifier4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = intentClassifier4.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +248,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D804C8EB2996F52D000E7B5F /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				D8FB22582997C00500B85680 /* intentClassifier 2.0.mlmodel */,
+				D8FB225C299A6B3D00B85680 /* intentClassifier4.mlmodel */,
+				D8FB225A2997C84900B85680 /* testmlView.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
 		D87B9BE628737BD900E2D3EF /* theme */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +314,7 @@
 		D87E2FCB285913C000735AF7 /* Kier_Nathan_Rewind */ = {
 			isa = PBXGroup;
 			children = (
+				D804C8EB2996F52D000E7B5F /* ML */,
 				D8B1B3922949378F0079140E /* API */,
 				D8C22BD328DD1FEF005CA6AE /* watch */,
 				D88AF79F28AAE935009A961C /* Health */,
@@ -642,6 +659,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8FB225D299A6B3D00B85680 /* intentClassifier4.mlmodel in Sources */,
 				D87E30092860D0CA00735AF7 /* ErrorView.swift in Sources */,
 				D87E30072860D02600735AF7 /* errorWrapper.swift in Sources */,
 				D88AF78F288F143E009A961C /* SplashScreenView.swift in Sources */,
@@ -658,6 +676,7 @@
 				D88973A929086A7C0023B18C /* Calorie.swift in Sources */,
 				D87B9BF62879DFC400E2D3EF /* formModel.swift in Sources */,
 				D87E2FFB2859169700735AF7 /* ThemePicker.swift in Sources */,
+				D8FB22592997C00500B85680 /* intentClassifier 2.0.mlmodel in Sources */,
 				D87E2FF72859165700735AF7 /* DetailEditView.swift in Sources */,
 				D87B9BFA2879E3A600E2D3EF /* formView.swift in Sources */,
 				D87E2FEB2859152900735AF7 /* ChatTimer.swift in Sources */,
@@ -705,6 +724,7 @@
 				D88973A329080A430023B18C /* heart.swift in Sources */,
 				D87E2FEF285915BC00735AF7 /* TILS.swift in Sources */,
 				D87E2FE92859150800735AF7 /* AVPlayer+Ding.swift in Sources */,
+				D8FB225B2997C84900B85680 /* testmlView.swift in Sources */,
 				D87E2FFF285916DD00735AF7 /* MeetingFooterView.swift in Sources */,
 				D8D788352956843200BFBD34 /* SceneDelegate.swift in Sources */,
 				D87B9BF02874BA4200E2D3EF /* botResponse.swift in Sources */,
@@ -887,6 +907,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kier_Nathan_Rewind/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "AppExamples wants to access your health data in order to analyze your health and best advice";
@@ -921,6 +942,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kier_Nathan_Rewind/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "AppExamples wants to access your health data in order to analyze your health and best advice";

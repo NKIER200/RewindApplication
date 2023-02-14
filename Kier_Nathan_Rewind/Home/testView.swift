@@ -24,7 +24,7 @@ struct testView: View {
                 }
             
             
-            botView()
+            testmlView()
                 .tabItem {
                     Image(systemName: "clock.circle")
                     Text("Help")
@@ -37,8 +37,8 @@ struct testView: View {
                 }
             todoentryView()
                 .tabItem {
-                    Image(systemName: "message")
-                    Text("Chat")
+                    Image(systemName: "pencil")
+                    Text("improve")
                 }
             
             distanceDataView()
