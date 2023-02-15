@@ -11,18 +11,21 @@ import CoreML
 struct testmlView: View {
     @State private var inputText = ""
 
-    let model = intentClassifier4()
+    let model = intentClassifierversion1_0()
 
     var body: some View {
         VStack {
             Text("Help Function")
                 .font(.title)
+                .foregroundColor(Color.red)
             Text("Using intent classifier")
                 .font(.subheadline)
+                .foregroundColor(Color.red)
 
-            TextField("Enter subject", text: $inputText)
+            TextField("Enter Word or phrase", text: $inputText)
                 .padding()
                 .background(Color(.red))
+                .foregroundColor(Color.black)
                 .cornerRadius(10)
                 .padding()
 
@@ -36,12 +39,18 @@ struct testmlView: View {
                 self.showResponse(response)
             }) {
                 Text("try")
+                    .padding()
+                    .background(Color(.red))
+                    .foregroundColor(Color.black)
+                    .cornerRadius(10)
+                    .padding()
+
             }
         }
     }
 
     private func classifyIntent(input: String) -> String? {
-        guard let inputFeatures = try? intentClassifier4Input(text: input) else {
+        guard let inputFeatures = try? intentClassifierversion1_0Input(text: input) else {
             return nil
         }
 
@@ -126,6 +135,56 @@ struct testmlView: View {
             return "When a player is substituted from the game. Subs can happen at any time."
         case "steal":
             return "When the ball is stolen by a defender and the ball switches possesion to the other team"
+        case "jumperpopsout":
+            return "A Jumpshot that has popped out after nearly going in"
+        case "Euroleague":
+            return "The highest level of European basketball"
+        case "postup":
+            return "Posting up in the paint"
+        case "drive":
+            return "Driving inside to the basket. Usually ends in a layup or dunk"
+        case "shortjumperinlane":
+            return "A short jumpshot taken not far from the basket."
+        case "layup":
+            return "A layup"
+        case "jumpermissoffbackrim":
+            return "Jumpshot that misses after hitting the back of the rim."
+        case "jumpermissoffsiderim":
+            return "Jumpshot that misses after hitting the side of the rim."
+        case "bankshot":
+            return "A shot that goes in after hitting the backboard/glass from an angle. Usually hitting thw box first."
+        case "basketcut":
+            return "Cutting to the basket for a lyup or shortjumper"
+        case "pass":
+            return "Passing the ball"
+        case "sideline":
+            return "a type of sideline"
+        case "corner":
+            return "A type of corner"
+        case "lane":
+            return "A name for the Lane."
+        case "elbow":
+            return "One of the elbows"
+        case "centeroffreethrowline":
+            return "The center of the freethrow line."
+        case "topofthearc":
+            return "The top of the arc"
+        case "therim":
+            return "Another word for the rim"
+        case "halfcourtline":
+            return "Another name for the halfcourt line"
+        case "needastop":
+            return "A way to say that a team needs a stop on defence. Either a close game, during a scoring run from the opposition or late in game."
+        case "playingD":
+            return "A term to describe a player playing defence"
+        case "forcedindirection":
+            return "A player was forced in a direction to stop them scoring"
+        case "tiegame":
+            return "The games score is tied. Could be heading to Overtime depending on when."
+        case "travel":
+            return "A term for travelling. Where a player takes more than two steps between or after dribbling. could also being moving their pivot foot."
+        case "foul":
+            return "A generic term for a generic foul. not necessarily a shooting foul."
         default:
             return "I'm sorry, this input is not accounted for in the model."
         }

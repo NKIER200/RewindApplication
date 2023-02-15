@@ -69,6 +69,7 @@
 		D88AF7A528AAEDA9009A961C /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AF7A428AAEDA9009A961C /* GraphView.swift */; };
 		D88AF7A728AAEDD2009A961C /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AF7A628AAEDD2009A961C /* Step.swift */; };
 		D88AF7AA28AAEEB0009A961C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AF7A928AAEEB0009A961C /* HealthKit.framework */; };
+		D8A5347F299C421F0084BA26 /* intentClassifierversion1.0.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8A5347E299C421F0084BA26 /* intentClassifierversion1.0.mlmodel */; };
 		D8B1B3912947A2F10079140E /* contentzView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1B3902947A2F10079140E /* contentzView.swift */; };
 		D8B1B394294937A80079140E /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1B393294937A80079140E /* APICall.swift */; };
 		D8B1B39729493A280079140E /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = D8B1B39629493A280079140E /* OpenAISwift */; };
@@ -94,7 +95,6 @@
 		D8D788372956845A00BFBD34 /* TestToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D788362956845A00BFBD34 /* TestToView.swift */; };
 		D8D788392956881400BFBD34 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D788382956881300BFBD34 /* CoreData.framework */; };
 		D8D7883C29568B6000BFBD34 /* testModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8D7883A29568B6000BFBD34 /* testModel.xcdatamodeld */; };
-		D8FB22592997C00500B85680 /* intentClassifier 2.0.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8FB22582997C00500B85680 /* intentClassifier 2.0.mlmodel */; };
 		D8FB225B2997C84900B85680 /* testmlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB225A2997C84900B85680 /* testmlView.swift */; };
 		D8FB225D299A6B3D00B85680 /* intentClassifier4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8FB225C299A6B3D00B85680 /* intentClassifier4.mlmodel */; };
 /* End PBXBuildFile section */
@@ -181,6 +181,7 @@
 		D88AF7A428AAEDA9009A961C /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		D88AF7A628AAEDD2009A961C /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		D88AF7A928AAEEB0009A961C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		D8A5347E299C421F0084BA26 /* intentClassifierversion1.0.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = intentClassifierversion1.0.mlmodel; sourceTree = "<group>"; };
 		D8B1B3902947A2F10079140E /* contentzView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentzView.swift; sourceTree = "<group>"; };
 		D8B1B393294937A80079140E /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
 		D8B1B39829493E630079140E /* APIcontentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIcontentView.swift; sourceTree = "<group>"; };
@@ -208,7 +209,6 @@
 		D8D788362956845A00BFBD34 /* TestToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestToView.swift; sourceTree = "<group>"; };
 		D8D788382956881300BFBD34 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D8D7883B29568B6000BFBD34 /* testModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testModel.xcdatamodel; sourceTree = "<group>"; };
-		D8FB22582997C00500B85680 /* intentClassifier 2.0.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "intentClassifier 2.0.mlmodel"; sourceTree = "<group>"; };
 		D8FB225A2997C84900B85680 /* testmlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testmlView.swift; sourceTree = "<group>"; };
 		D8FB225C299A6B3D00B85680 /* intentClassifier4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = intentClassifier4.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,7 +251,7 @@
 		D804C8EB2996F52D000E7B5F /* ML */ = {
 			isa = PBXGroup;
 			children = (
-				D8FB22582997C00500B85680 /* intentClassifier 2.0.mlmodel */,
+				D8A5347E299C421F0084BA26 /* intentClassifierversion1.0.mlmodel */,
 				D8FB225C299A6B3D00B85680 /* intentClassifier4.mlmodel */,
 				D8FB225A2997C84900B85680 /* testmlView.swift */,
 			);
@@ -676,8 +676,8 @@
 				D88973A929086A7C0023B18C /* Calorie.swift in Sources */,
 				D87B9BF62879DFC400E2D3EF /* formModel.swift in Sources */,
 				D87E2FFB2859169700735AF7 /* ThemePicker.swift in Sources */,
-				D8FB22592997C00500B85680 /* intentClassifier 2.0.mlmodel in Sources */,
 				D87E2FF72859165700735AF7 /* DetailEditView.swift in Sources */,
+				D8A5347F299C421F0084BA26 /* intentClassifierversion1.0.mlmodel in Sources */,
 				D87B9BFA2879E3A600E2D3EF /* formView.swift in Sources */,
 				D87E2FEB2859152900735AF7 /* ChatTimer.swift in Sources */,
 				D87B9BF3287747AD00E2D3EF /* dataTestView.swift in Sources */,
