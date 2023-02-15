@@ -28,6 +28,7 @@ struct testmlView: View {
                 .foregroundColor(Color.black)
                 .cornerRadius(10)
                 .padding()
+            
 
             Button(action: {
                 guard let intent = classifyIntent(input: self.inputText) else {
