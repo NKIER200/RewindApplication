@@ -9,7 +9,9 @@ import SwiftUI
 
 struct todoentryView: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var entrys: FetchedResults<ToDoItem>
+    @FetchRequest(sortDescriptors: [
+        SortDescriptor(\.title)
+    ]) var entrys: FetchedResults<ToDoItem>
     @State private var showingAddScreen = false
     
     var body: some View {
@@ -30,6 +32,8 @@ struct todoentryView: View {
                         }
                     }
                 }
+                .onDelete(perform: deleteENtry)
+                
                 Button {
                     showingAddScreen.toggle()
                 } label: {
@@ -38,6 +42,7 @@ struct todoentryView: View {
                 .sheet(isPresented: $showingAddScreen) {
                     dcView()
                 }
+                EditButton()
                 
             }
             
@@ -45,7 +50,9 @@ struct todoentryView: View {
                 .navigationTitle("Training sessions")
            
                 .toolbar {
-                    
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        EditButton()
+                    }
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
                             showingAddScreen.toggle()
@@ -58,6 +65,14 @@ struct todoentryView: View {
                     dcView()
                 }
         }
+    }
+    
+    func deleteENtry(at offsets: IndexSet) {
+        for offset in offsets {
+            let entry = entrys[offset]
+            moc.delete(entry)
+        }
+        try? moc.save()
     }
 }
 

@@ -71,7 +71,7 @@ struct houseView: View {
                         Text("Nathan Kier, Honours Project")
                             .font(.title2)
                             .multilineTextAlignment(.center)
-                        Text("S1906771")
+                        Text("S1906771, nkier200@icloud.com")
                             .multilineTextAlignment(.center)
                     }
                     

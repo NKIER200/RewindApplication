@@ -18,8 +18,10 @@ struct distanceDataView: View {
     }
     
     private func updateUIFromStatistics(_ statisticsCollection: HKStatisticsCollection) {
-        
-        let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date())!
+        //sets start date for graph
+        //two weeks before current day
+        let startDate = Calendar.current.date(byAdding: .day, value: -14, to: Date())!
+        //sets the end date to today
         let endDate = Date()
         
         statisticsCollection.enumerateStatistics(from: startDate, to: endDate) { (statistics, stop) in
