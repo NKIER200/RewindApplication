@@ -38,7 +38,7 @@ struct distanceDataView: View {
         
         NavigationView {
         
-        GraphView(stepsForGraph: steps)
+        GraphView(stepsForTheGraph: steps)
             
         .navigationTitle("Steps Taken This Week")
         }

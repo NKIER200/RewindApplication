@@ -1,58 +1,52 @@
 //
-//  heartDataView.swift
+//  amtDataView.swift
 //  Kier_Nathan_Rewind
 //
-//  Created by Nathan Kier on 25/10/2022.
+//  Created by Nathan Kier on 28/02/2023.
 //
 
 import SwiftUI
 import HealthKit
 
-struct heartDataView: View {
+struct amtDataView: View {
     
     private var healthStore: HealthStore?
-    @State private var heartRate1: [heart] = [heart]()
+    @State private var amts: [AMT] = [AMT]()
     
     init() {
         healthStore = HealthStore()
     }
     
     private func updateUIFromStatistics(_ statisticsCollection: HKStatisticsCollection) {
+        
         let startDate = Calendar.current.date(byAdding: .day, value: -14, to: Date())!
         let endDate = Date()
-
-        heartRate1.removeAll()
-
+        
         statisticsCollection.enumerateStatistics(from: startDate, to: endDate) { (statistics, stop) in
-            guard let count = statistics.minimumQuantity()?.doubleValue(for: HKUnit.count().unitDivided(by: .minute())) else {
-                return // skip if count is nil
-            }
-            let heart = heart(count: Int(count), date: statistics.startDate)
-            heartRate1.append(heart)
+            
+            let count = statistics.sumQuantity()?.doubleValue(for: .hour())
+            
+            let amt = AMT(count: Double(count ?? 0), date: statistics.startDate)
+            amts.append(amt)
         }
-        print(heartRate1)
+        
     }
-
-
+    
     var body: some View {
         
         NavigationView {
         
-            if heartRate1.isEmpty {
-                Text("No heart rate data available")
-            } else {
-                heartGraphView(heartForGraph: heartRate1)
-            }
-        
+            amtGraphView(amtForGraph: amts)
+            
+        .navigationTitle("AMT This Week")
         }
-        .navigationTitle("Heartrate This Week")
        
         
             .onAppear {
                 if let healthStore = healthStore {
-                    healthStore.reqAuth3 { success in
+                    healthStore.reqAuth5 { success in
                         if success {
-                            healthStore.calculateHeart { statisticsCollection in
+                            healthStore.calculateAMT { statisticsCollection in
                                 if let statisticsCollection = statisticsCollection {
                                     // update the UI
                                     updateUIFromStatistics(statisticsCollection)
@@ -66,9 +60,9 @@ struct heartDataView: View {
         
     }
 }
-struct heartDataView_Previews: PreviewProvider {
+struct amtDataView_Previews: PreviewProvider {
     static var previews: some View {
-        heartDataView()
+        amtDataView()
    
     }
 }

@@ -1,13 +1,15 @@
 //
-//  GraphView.swift
+//  amtGraphView.swift
 //  Kier_Nathan_Rewind
 //
-//  Created by Nathan Kier on 15/08/2022.
+//  Created by Nathan Kier on 28/02/2023.
 //
 
 import SwiftUI
 
-struct GraphView: View {
+import SwiftUI
+
+struct amtGraphView: View {
     
     
     static let dateFormatter: DateFormatter = {
@@ -18,10 +20,10 @@ struct GraphView: View {
         
     }()
     
-    let stepsForTheGraph: [Step]
+    let amtForGraph: [AMT]
     
-    var totalStepsT: Int {
-        stepsForTheGraph.map { $0.count }.reduce(0,+)
+    var totalamt: Int {
+        amtForGraph.map { Int($0.count) }.reduce(0,+)
     }
     
     var body: some View {
@@ -29,18 +31,18 @@ struct GraphView: View {
             VStack {
                 HStack(alignment: .lastTextBaseline) {
                     
-                    ForEach(stepsForTheGraph, id: \.id) { step in
+                    ForEach(amtForGraph, id: \.id) { amt in
                         
-                        let yValue = Swift.min(step.count/20, 300)
+                        let yValue = Swift.min(amt.count/0.09, 90)
                         
                         VStack {
-                            Text("\(step.count)")
+                            Text("\(amt.count)")
                                 .font(.caption)
                             
                             Rectangle()
-                                .fill(step.count > 7000 ? Color.yellow :Color.red)
+                                .fill(amt.count > 7 ? Color.yellow :Color.red)
                                 .frame(width: 20, height: CGFloat(yValue))
-                            Text("\(step.date,formatter: Self.dateFormatter)")
+                            Text("\(amt.date,formatter: Self.dateFormatter)")
                                 .font(.caption)
                             
                         }
@@ -48,9 +50,9 @@ struct GraphView: View {
                     
                 }
                 
-                Text("Total Steps: \(totalStepsT)").padding(.top, 100)
+                Text("Keep Pushing, you can do better! LeBron would do better").padding(.top, 100)
                     .foregroundColor(Color.red)
-                    .opacity(0.9)
+                    
                 
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 .cornerRadius(10)
@@ -59,17 +61,17 @@ struct GraphView: View {
     }
 }
 
-struct GraphView_Previews: PreviewProvider {
+struct amtGraphView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let steps = [
-                   Step(count: 3452, date: Date()),
-                   Step(count: 123, date: Date()),
-                   Step(count: 1223, date: Date()),
-                   Step(count: 5223, date: Date()),
-                   Step(count: 12023, date: Date())
+        let amts = [
+            AMT(count: 3.52, date: Date()),
+            AMT(count: 1.23, date: Date()),
+            AMT(count: 12.23, date: Date()),
+            AMT(count: 52.23, date: Date()),
+            AMT(count: 12.023, date: Date())
                ]
         
-        GraphView(stepsForTheGraph: steps)
+        amtGraphView(amtForGraph: amts)
     }
 }

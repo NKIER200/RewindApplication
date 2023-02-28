@@ -15,7 +15,7 @@ struct SettingsView: View {
     @State private var errorwrapper: errorWrapper?
     var body: some View {
         NavigationView {
-            
+           //form is used for user input
             Form{
                 
                 Section(header: Text("Display"),
@@ -54,7 +54,7 @@ struct SettingsView: View {
                 }
             }
                     Section {
-                        Label("Check out my GitHub nkier200", systemImage: "link")
+                        Label("The Miami Heat will win the 2023 NBA Championship", systemImage: "link")
                     }
                     
                 }

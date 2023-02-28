@@ -48,7 +48,7 @@ struct GraphingView: View {
                     
                 }
                 
-                Text("Keep Pushing, you can do better!").padding(.top, 100)
+                Text("Keep Pushing, you can do better! LeBron would do better").padding(.top, 100)
                     .foregroundColor(Color.red)
                     
                 

@@ -1,0 +1,7 @@
+{
+	"com.apple.developer.healthkit" = YES;
+	"com.apple.developer.healthkit.access" = (
+		YES,
+	);
+	"com.apple.developer.healthkit.background-delivery" = YES;
+}

@@ -65,10 +65,10 @@ struct testView: View {
                     Text("Active Calories")
                 }
             
-            APIcontentView()
+            amtDataView()
                 .tabItem {
-                    Image(systemName: "person.wave.2")
-                    Text("ChatGPT")
+                    Image(systemName: "heart")
+                    Text("Excercise Minutes")
                 }
             
             

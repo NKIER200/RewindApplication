@@ -95,6 +95,10 @@
 		D8D788372956845A00BFBD34 /* TestToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D788362956845A00BFBD34 /* TestToView.swift */; };
 		D8D788392956881400BFBD34 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D788382956881300BFBD34 /* CoreData.framework */; };
 		D8D7883C29568B6000BFBD34 /* testModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8D7883A29568B6000BFBD34 /* testModel.xcdatamodeld */; };
+		D8E2028929AE40C000A4C28E /* heartRateChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2028829AE40C000A4C28E /* heartRateChartView.swift */; };
+		D8E2028B29AE59F700A4C28E /* amtDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2028A29AE59F700A4C28E /* amtDataView.swift */; };
+		D8E2028D29AE5A0900A4C28E /* amtGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2028C29AE5A0900A4C28E /* amtGraphView.swift */; };
+		D8E2028F29AE5A1F00A4C28E /* AMT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2028E29AE5A1F00A4C28E /* AMT.swift */; };
 		D8FB225B2997C84900B85680 /* testmlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB225A2997C84900B85680 /* testmlView.swift */; };
 		D8FB225D299A6B3D00B85680 /* intentClassifier4.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8FB225C299A6B3D00B85680 /* intentClassifier4.mlmodel */; };
 /* End PBXBuildFile section */
@@ -174,7 +178,7 @@
 		D88AF79228A1270C009A961C /* userArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userArrayView.swift; sourceTree = "<group>"; };
 		D88AF79628A27234009A961C /* testingarrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingarrayView.swift; sourceTree = "<group>"; };
 		D88AF79828A272F3009A961C /* testingeditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingeditView.swift; sourceTree = "<group>"; };
-		D88AF79A28AAE48A009A961C /* Kier_Nathan_Rewind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kier_Nathan_Rewind.entitlements; sourceTree = "<group>"; };
+		D88AF79A28AAE48A009A961C /* Kier_Nathan_Rewindtest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Kier_Nathan_Rewindtest.plist; sourceTree = "<group>"; };
 		D88AF79D28AAE6C3009A961C /* cameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraView.swift; sourceTree = "<group>"; };
 		D88AF7A028AAE94D009A961C /* HealthInfoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthInfoStore.swift; sourceTree = "<group>"; };
 		D88AF7A228AAEB2D009A961C /* distanceDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = distanceDataView.swift; sourceTree = "<group>"; };
@@ -209,6 +213,11 @@
 		D8D788362956845A00BFBD34 /* TestToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestToView.swift; sourceTree = "<group>"; };
 		D8D788382956881300BFBD34 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D8D7883B29568B6000BFBD34 /* testModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testModel.xcdatamodel; sourceTree = "<group>"; };
+		D8E2028729AD4C1700A4C28E /* Kier_Nathan_RewindRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kier_Nathan_RewindRelease.entitlements; sourceTree = "<group>"; };
+		D8E2028829AE40C000A4C28E /* heartRateChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartRateChartView.swift; sourceTree = "<group>"; };
+		D8E2028A29AE59F700A4C28E /* amtDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amtDataView.swift; sourceTree = "<group>"; };
+		D8E2028C29AE5A0900A4C28E /* amtGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = amtGraphView.swift; sourceTree = "<group>"; };
+		D8E2028E29AE5A1F00A4C28E /* AMT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMT.swift; sourceTree = "<group>"; };
 		D8FB225A2997C84900B85680 /* testmlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testmlView.swift; sourceTree = "<group>"; };
 		D8FB225C299A6B3D00B85680 /* intentClassifier4.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = intentClassifier4.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -314,11 +323,12 @@
 		D87E2FCB285913C000735AF7 /* Kier_Nathan_Rewind */ = {
 			isa = PBXGroup;
 			children = (
+				D8E2028729AD4C1700A4C28E /* Kier_Nathan_RewindRelease.entitlements */,
 				D804C8EB2996F52D000E7B5F /* ML */,
 				D8B1B3922949378F0079140E /* API */,
 				D8C22BD328DD1FEF005CA6AE /* watch */,
 				D88AF79F28AAE935009A961C /* Health */,
-				D88AF79A28AAE48A009A961C /* Kier_Nathan_Rewind.entitlements */,
+				D88AF79A28AAE48A009A961C /* Kier_Nathan_Rewindtest.plist */,
 				D87B9BF42879DEE200E2D3EF /* form */,
 				D87B9BF12877476600E2D3EF /* data */,
 				D87B9BE628737BD900E2D3EF /* theme */,
@@ -420,6 +430,10 @@
 				D88973A829086A7C0023B18C /* Calorie.swift */,
 				D88973AA290882E00023B18C /* calorieDataView.swift */,
 				D88973AC290883090023B18C /* calorieGraphView.swift */,
+				D8E2028829AE40C000A4C28E /* heartRateChartView.swift */,
+				D8E2028A29AE59F700A4C28E /* amtDataView.swift */,
+				D8E2028C29AE5A0900A4C28E /* amtGraphView.swift */,
+				D8E2028E29AE5A1F00A4C28E /* AMT.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -662,6 +676,7 @@
 				D8FB225D299A6B3D00B85680 /* intentClassifier4.mlmodel in Sources */,
 				D87E30092860D0CA00735AF7 /* ErrorView.swift in Sources */,
 				D87E30072860D02600735AF7 /* errorWrapper.swift in Sources */,
+				D8E2028B29AE59F700A4C28E /* amtDataView.swift in Sources */,
 				D88AF78F288F143E009A961C /* SplashScreenView.swift in Sources */,
 				D87E2FCF285913C000735AF7 /* ContentView.swift in Sources */,
 				D87E301328667ADF00735AF7 /* HistoryView.swift in Sources */,
@@ -680,6 +695,7 @@
 				D8A5347F299C421F0084BA26 /* intentClassifierversion1.0.mlmodel in Sources */,
 				D87B9BFA2879E3A600E2D3EF /* formView.swift in Sources */,
 				D87E2FEB2859152900735AF7 /* ChatTimer.swift in Sources */,
+				D8E2028929AE40C000A4C28E /* heartRateChartView.swift in Sources */,
 				D87B9BF3287747AD00E2D3EF /* dataTestView.swift in Sources */,
 				D87B9BEC287387AD00E2D3EF /* chatToTextView.swift in Sources */,
 				D8B1B39929493E630079140E /* APIcontentView.swift in Sources */,
@@ -688,8 +704,10 @@
 				D87E2FE22859148B00735AF7 /* accountView.swift in Sources */,
 				D8B83C1329770408003C6671 /* detailedTDView.swift in Sources */,
 				D87E3001285CD2D100735AF7 /* History.swift in Sources */,
+				D8E2028D29AE5A0900A4C28E /* amtGraphView.swift in Sources */,
 				D8D788312956837600BFBD34 /* textEditorView.swift in Sources */,
 				D87E30152869FD8E00735AF7 /* LogView.swift in Sources */,
+				D8E2028F29AE5A1F00A4C28E /* AMT.swift in Sources */,
 				D88973A729080B460023B18C /* heartDataView.swift in Sources */,
 				D87B9BE828737C0C00E2D3EF /* systemThemeManager.swift in Sources */,
 				D87E2FE7285914D800735AF7 /* DailyChat.swift in Sources */,
@@ -907,7 +925,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kier_Nathan_Rewind/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GZ69AQFF9N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "AppExamples wants to access your health data in order to analyze your health and best advice";
@@ -938,7 +956,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Kier_Nathan_Rewind/Kier_Nathan_Rewind.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Kier_Nathan_Rewind/Kier_Nathan_RewindRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kier_Nathan_Rewind/Preview Content\"";
