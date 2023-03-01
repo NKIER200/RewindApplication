@@ -19,69 +19,74 @@ struct houseView: View {
                 circleImage()
                     .offset(y: -130)
                     .padding(.bottom, -130)
-                VStack(alignment: .leading) {
+                VStack(alignment: .center) {
                     
                     Text("Welcome To Rewind \(Image(systemName: "clock.circle.fill"))")
                         .font(.largeTitle)
                         .foregroundColor(Color.red)
-                        .multilineTextAlignment(.center)
+                        
                         .font(.system(size: 30))
-                        
-
-                    HStack {
-                        TextEditor(text: $newsText)
-                            .font(.subheadline)
-                            .multilineTextAlignment(.center)
-                        Spacer()
-                        
-                        Text("Start now.")
-                            .font(.subheadline)
-                            .padding(.top)
-                        
-                    }
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+                                           
                     Divider()
-                    
                    
                     VStack {
-                        Text("This Weeks News")
+                        Text("App Information")
                             .font(.largeTitle)
                             .foregroundColor(Color.red)
-                            .multilineTextAlignment(.center)
-                            .font(.system(size: 30))
-                        Spacer()
-                        HStack {
-                            Text("Boston Celtics rumoured to be including Jaylen Brown in potential trades for kevin durant")
-                            Spacer()
-                            Text("Matthew Selkirk decimates ankle while imatating Hakeem")
                             
-                        }
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
+                            .font(.system(size: 30))
+                    }
+                    
+                    VStack {
+                        
                         HStack{
-                            Text("Jimmy Butler is still the worlds greatest player, seen practicing threes with star trainer  Chris Brickley")
-                            Spacer()
-                            Text("GCU Arc Centre has no courts or hoops available on a random summer Tuesday. Has the world ended?")
+                            Text("The Help page \(Image(systemName: "clock.circle.fill"))  provides explanations of players and technical terms.")
                         }
+                        
+                        Divider()
+                        HStack{
+                            Text("Access the Videos page \(Image(systemName: "play")) to learn from greats of the game")
+                        }
+                        
+                        Divider()
+                        HStack{
+                            Text("Use the Improve page \(Image(systemName: "pencil")) to document your training sessions. Make notes on what worked and what didn't")
+                        }
+                        
+                        Divider()
+                        HStack {
+                            Text("To access your health information graphs \(Image(systemName: "heart")), click the More page \(Image(systemName: "ellipsis")) on the right.")
+                        }
+                        Divider()
+                        HStack{
+                            Text("You can also find the settings page \(Image(systemName: "gear")) in More.")
+                        }
+                    }
+                            
+                        
+                          
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                         Divider()
+                        VStack{
+                            Text("Nathan Kier, Honours Project")
+                                .font(.title2)
+                                
+                            Text("S1906771, nkier200@icloud.com")
+                                
+                        }
                         
-                        Text("Nathan Kier, Honours Project")
-                            .font(.title2)
-                            .multilineTextAlignment(.center)
-                        Text("S1906771, nkier200@icloud.com")
-                            .multilineTextAlignment(.center)
-                    }
-                    
                         
                 }
+                .multilineTextAlignment(.center)
                 
                 .navigationTitle("Home")
             }
+            
         }
+        
     }
+       
     
 }
 

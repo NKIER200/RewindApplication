@@ -38,19 +38,19 @@ struct testView: View {
             todoentryView()
                 .tabItem {
                     Image(systemName: "pencil")
-                    Text("improve")
+                    Text("Improve")
                 }
             
             distanceDataView()
                 .tabItem {
                     Image(systemName: "heart")
-                    Text("Distance")
+                    Text("Steps Covered")
                 }
             
             moveDataView()
                 .tabItem {
                     Image(systemName: "heart")
-                    Text("Kilometers covered")
+                    Text("Miles covered")
                 }
             
             heartDataView()

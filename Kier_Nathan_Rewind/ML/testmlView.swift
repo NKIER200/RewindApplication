@@ -15,44 +15,45 @@ struct testmlView: View {
 
     var body: some View {
         VStack {
-            Text("Help Function")
-                .font(.title)
-                .foregroundColor(Color.red)
-            Image(systemName: "clock.circle.fill")
-                .font(.system(size: 30))
-                .foregroundColor(Color.red)
-            Text("Using intent classifier")
-                .font(.subheadline)
-                .foregroundColor(Color.red)
-
-            TextField("Enter Word or phrase", text: $inputText)
-                .padding()
-                .background(Color(.red))
-                .foregroundColor(Color.black)
-                .cornerRadius(10)
-                .padding()
-            
-
-            Button(action: {
-                guard let intent = classifyIntent(input: self.inputText) else {
-                    return
-                }
-
-                let response = generateResponse(for: intent)
-
-                self.showResponse(response)
-            }) {
-                Text("try")
+            HStack {
+                Text("Rewind Help Bot")
+                    .font(.largeTitle)
+                    .italic()
+                Image(systemName: "clock.circle.fill")
+                    .font(.system(size: 30))
+                    .foregroundColor(Color.red)
+            }
+            ScrollView {
+                Text("Using intent classifier")
+                    .font(.subheadline)
+                
+            }
+            HStack{
+                TextField("Enter Word or phrase", text: $inputText)
                     .padding()
                     .background(Color(.red))
                     .foregroundColor(Color.black)
                     .cornerRadius(10)
                     .padding()
-
+                
+                
+                Button(action: {
+                    guard let intent = classifyIntent(input: self.inputText) else {
+                        return
+                    }
+                    
+                    let response = generateResponse(for: intent)
+                    
+                    self.showResponse(response)
+                }) {
+                    Image(systemName: "clock.circle.fill")
+                        .font(.system(size: 30))
+                        .foregroundColor(Color.red)
+                    
+                }
             }
         }
     }
-
     private func classifyIntent(input: String) -> String? {
         guard let inputFeatures = try? intentClassifierversion1_0Input(text: input) else {
             return nil
@@ -130,7 +131,7 @@ struct testmlView: View {
         case "clock":
             return "The shot clock. Teams have 24 seconds once receving the ball to shoot. clock is reset to 14 seconds if the ball hits the rim."
         case "mikebreenspecial":
-            return "BANG!! SHouted by Mike Breen when a player makes either a hugely important 3 pointer, a very deep shot, or a buzzer beater. Sometimes all three combined."
+            return "BANG!! Shouted by Mike Breen when a player makes either a hugely important 3 pointer, a very deep shot, or a buzzer beater. Sometimes all three combined."
         case "inbound":
             return "When the ball is passed into play."
         case "gameclock":

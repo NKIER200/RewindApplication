@@ -13,27 +13,27 @@ struct fgRatingView: View {
     var body: some View {
         switch fieldGoals {
         case 0:
-            return Text("How?")
+            return Text("🫣")
         case 1...25:
-            return Text("L")
+            return Text("🥶")
         case 25...50:
-            return Text("OK")
+            return Text("😟")
         case 50...75:
-            return Text("well in")
+            return Text("👍")
         case 75...100:
-            return Text("nice one")
-        case 125...175:
-            return Text("very good")
-        case 175...275:
-            return Text("amazing")
-        case 275...400:
-            return Text("Woah")
-        case 400...450:
-            return Text("How are you this good?")
-        case 450...480:
-            return Text("Incredible")
-        case 480...499:
-            return Text("SO Close")
+            return Text("🤯")
+        case 101...175:
+            return Text("😎")
+        case 176...275:
+            return Text("🏀")
+        case 276...400:
+            return Text("🔥")
+        case 401...450:
+            return Text("🤩")
+        case 451...480:
+            return Text("😳")
+        case 481...500:
+            return Text("NBA")
         default:
             return Text("NBA Player")
             
