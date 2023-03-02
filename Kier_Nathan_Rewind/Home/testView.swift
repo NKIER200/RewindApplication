@@ -87,7 +87,9 @@ struct testView: View {
                 .handleTheme(darkMode: isDarkMode, grayScale: isGrayScale, system: isDeviceSettings)
         }
         .navigationBarHidden(true)
+        .accentColor(.red)
             }
+        
     }
 
 

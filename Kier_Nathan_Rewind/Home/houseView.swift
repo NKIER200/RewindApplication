@@ -36,7 +36,7 @@ struct houseView: View {
                             
                             .font(.system(size: 30))
                     }
-                    
+                    Divider()
                     VStack {
                         
                         HStack{

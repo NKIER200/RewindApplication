@@ -16,11 +16,11 @@ struct fgRatingView: View {
             return Text("🫣")
         case 1...25:
             return Text("🥶")
-        case 25...50:
+        case 26...50:
             return Text("😟")
-        case 50...75:
+        case 51...75:
             return Text("👍")
-        case 75...100:
+        case 76...100:
             return Text("🤯")
         case 101...175:
             return Text("😎")
