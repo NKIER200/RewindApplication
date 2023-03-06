@@ -50,7 +50,7 @@ struct testView: View {
             moveDataView()
                 .tabItem {
                     Image(systemName: "heart")
-                    Text("Miles covered")
+                    Text("Miles Covered")
                 }
             
             heartDataView()
@@ -68,7 +68,7 @@ struct testView: View {
             amtDataView()
                 .tabItem {
                     Image(systemName: "heart")
-                    Text("Excercise Minutes")
+                    Text("Exercise Minutes")
                 }
             
             
