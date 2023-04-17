@@ -39,6 +39,7 @@ struct calorieDataView: View {
             calorieGraphView(calForGraph: calories)
             
         .navigationTitle("Active Calories This Week")
+        .navigationBarTitleDisplayMode(.inline)
         }
        
         

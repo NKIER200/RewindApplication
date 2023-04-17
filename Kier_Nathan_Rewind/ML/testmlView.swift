@@ -7,7 +7,7 @@
 
 import SwiftUI
 import CoreML
-
+//this is where the labels of the intent classifier are assigned values. so when the labels are found based on the user input the response assigned to the label is displayed.
 struct testmlView: View {
     @State private var inputText = ""
 
@@ -85,7 +85,7 @@ struct testmlView: View {
         case "tip":
             return "the start of a game"
         case "shoe1":
-            return "Kyrie has an incredible line of shoes with Nike. the Most recent being the Infinity. However, due to recent anti-semitisim he was dropped by the company and his shoes discontinued. Only anti-semites wear Kyries now"
+            return "Kyrie has an incredible line of shoes with Nike. the Most recent being the Infinity. However, due to recent anti-semitisim he was dropped by the company and his shoes discontinued. We strongly discourage you from wearing Kyries due to this."
         case "shoe2":
             return "Lebron James, The King, King James, Him James, The Goat, The Alltime scorer has had many shoes with Nike. The most recent being the LeBron 20. The shoes technology may have changed since his first personal shoe but LeBron is the same old goat."
         case "block":
@@ -196,7 +196,7 @@ struct testmlView: View {
     }
 
     private func showResponse(_ response: String) {
-        let alert = UIAlertController(title: "models Response", message: response, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Response", message: response, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "end", style: .default, handler: nil))
 
         UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true, completion: nil)

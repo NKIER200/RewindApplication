@@ -14,7 +14,6 @@ struct VidView: View {
                 
                 Text("Welcome To Rewind Tips \(Image(systemName: "clock.circle.fill"))")
                     .font(.largeTitle)
-                    .foregroundColor(Color.red)
                     .multilineTextAlignment(.center)
                     .font(.system(size: 30))
                 Spacer()

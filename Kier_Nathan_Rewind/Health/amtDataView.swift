@@ -39,6 +39,7 @@ struct amtDataView: View {
             amtGraphView(amtForGraph: amts)
             
         .navigationTitle("AMT This Week")
+        .navigationBarTitleDisplayMode(.inline)
         }
        
         

@@ -39,6 +39,7 @@ struct moveDataView: View {
             GraphingView(milesForGraph: miles)
             
         .navigationTitle("Miles This Week")
+        .navigationBarTitleDisplayMode(.inline)
         }
        
         

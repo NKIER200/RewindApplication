@@ -324,34 +324,15 @@
 			isa = PBXGroup;
 			children = (
 				D8E2028729AD4C1700A4C28E /* Kier_Nathan_RewindRelease.entitlements */,
+				D87E2FDA285913FB00735AF7 /* Home */,
 				D804C8EB2996F52D000E7B5F /* ML */,
-				D8B1B3922949378F0079140E /* API */,
-				D8C22BD328DD1FEF005CA6AE /* watch */,
 				D88AF79F28AAE935009A961C /* Health */,
 				D88AF79A28AAE48A009A961C /* Kier_Nathan_Rewindtest.plist */,
-				D87B9BF42879DEE200E2D3EF /* form */,
-				D87B9BF12877476600E2D3EF /* data */,
-				D87B9BE628737BD900E2D3EF /* theme */,
-				D87E2FDA285913FB00735AF7 /* Home */,
 				D87E2FCC285913C000735AF7 /* Kier_Nathan_RewindApp.swift */,
-				D87E2FE32859149A00735AF7 /* Models */,
-				D87E2FCE285913C000735AF7 /* ContentView.swift */,
-				D87E2FEE285915BC00735AF7 /* TILS.swift */,
+				D8B1B3922949378F0079140E /* API */,
+				D87E2FE32859149A00735AF7 /* Learning Materials (If interested) */,
 				D87E2FD0285913C200735AF7 /* Assets.xcassets */,
 				D87E2FD2285913C200735AF7 /* Preview Content */,
-				D87E2FEC2859156900735AF7 /* ChatProgressViewStyle.swift */,
-				D87E2FF0285915EA00735AF7 /* CardView.swift */,
-				D87E2FF22859160B00735AF7 /* chatsView.swift */,
-				D87E2FF42859163100735AF7 /* DetailView.swift */,
-				D87E2FF62859165700735AF7 /* DetailEditView.swift */,
-				D87E2FF82859167A00735AF7 /* ThemeView.swift */,
-				D87E2FFA2859169700735AF7 /* ThemePicker.swift */,
-				D87E2FFC285916C600735AF7 /* MeetingHeaderView.swift */,
-				D87E2FFE285916DD00735AF7 /* MeetingFooterView.swift */,
-				D87E30082860D0CA00735AF7 /* ErrorView.swift */,
-				D87E300C2860D7BE00735AF7 /* ClockView.swift */,
-				D87E300E2860DB1C00735AF7 /* ArcForClock.swift */,
-				D87E301228667ADF00735AF7 /* HistoryView.swift */,
 			);
 			path = Kier_Nathan_Rewind;
 			sourceTree = "<group>";
@@ -375,14 +356,12 @@
 				D87B9BE0287369E100E2D3EF /* SettingsView.swift */,
 				D87B9BE22873766000E2D3EF /* testView.swift */,
 				D87B9BE42873780900E2D3EF /* houseView.swift */,
-				D87B9BEB287387AD00E2D3EF /* chatToTextView.swift */,
 				D87B9BED2874B79B00E2D3EF /* botView.swift */,
 				D87B9BEF2874BA4200E2D3EF /* botResponse.swift */,
 				D88AF78A2884A107009A961C /* videoView.swift */,
 				D88AF78C2884A5BE009A961C /* VidView.swift */,
 				D88AF78E288F143E009A961C /* SplashScreenView.swift */,
 				D87E30142869FD8E00735AF7 /* LogView.swift */,
-				D88AF79D28AAE6C3009A961C /* cameraView.swift */,
 				D8B1B3902947A2F10079140E /* contentzView.swift */,
 				D8D788302956837600BFBD34 /* textEditorView.swift */,
 				D8D788322956841100BFBD34 /* ToDoItem.swift */,
@@ -398,19 +377,40 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		D87E2FE32859149A00735AF7 /* Models */ = {
+		D87E2FE32859149A00735AF7 /* Learning Materials (If interested) */ = {
 			isa = PBXGroup;
 			children = (
+				D8C22BD328DD1FEF005CA6AE /* watch */,
+				D88AF79D28AAE6C3009A961C /* cameraView.swift */,
+				D87B9BEB287387AD00E2D3EF /* chatToTextView.swift */,
+				D87B9BF12877476600E2D3EF /* data */,
+				D87B9BF42879DEE200E2D3EF /* form */,
+				D87B9BE628737BD900E2D3EF /* theme */,
+				D87E2FFE285916DD00735AF7 /* MeetingFooterView.swift */,
+				D87E2FFC285916C600735AF7 /* MeetingHeaderView.swift */,
+				D87E30082860D0CA00735AF7 /* ErrorView.swift */,
+				D87E2FFA2859169700735AF7 /* ThemePicker.swift */,
+				D87E2FF82859167A00735AF7 /* ThemeView.swift */,
+				D87E2FF62859165700735AF7 /* DetailEditView.swift */,
+				D87E2FF42859163100735AF7 /* DetailView.swift */,
+				D87E2FF22859160B00735AF7 /* chatsView.swift */,
+				D87E301228667ADF00735AF7 /* HistoryView.swift */,
+				D87E2FF0285915EA00735AF7 /* CardView.swift */,
+				D87E2FEC2859156900735AF7 /* ChatProgressViewStyle.swift */,
+				D87E2FEE285915BC00735AF7 /* TILS.swift */,
+				D87E2FCE285913C000735AF7 /* ContentView.swift */,
 				D87E2FE4285914B500735AF7 /* Theme.swift */,
 				D87E2FE6285914D800735AF7 /* DailyChat.swift */,
+				D87E300C2860D7BE00735AF7 /* ClockView.swift */,
 				D87E2FE82859150800735AF7 /* AVPlayer+Ding.swift */,
 				D87E2FEA2859152900735AF7 /* ChatTimer.swift */,
 				D87E3000285CD2D000735AF7 /* History.swift */,
+				D87E300E2860DB1C00735AF7 /* ArcForClock.swift */,
 				D87E3002285CDB0700735AF7 /* ChatStore.swift */,
 				D87E30062860D02600735AF7 /* errorWrapper.swift */,
 				D87E3010286675DE00735AF7 /* SpeechRecognizer.swift */,
 			);
-			path = Models;
+			path = "Learning Materials (If interested)";
 			sourceTree = "<group>";
 		};
 		D88AF79F28AAE935009A961C /* Health */ = {

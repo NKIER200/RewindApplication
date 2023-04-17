@@ -9,7 +9,8 @@ import SwiftUI
 
 @main
 struct Kier_Nathan_RewindApp: App {
-    @State private var store = ChatStore()
+  //runs the application
+    //initial view is SplashScreenView()
     @State private var errorwrapper: errorWrapper?
     @StateObject private var dataController = DataController()
     var body: some Scene {

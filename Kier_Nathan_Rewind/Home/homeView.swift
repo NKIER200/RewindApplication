@@ -12,7 +12,8 @@ struct homeView: View {
     
     @StateObject private var loginFormManager = LoginFormManager()
     var body: some View {
-        
+        // old home page
+        //if interested to see the evolution to the current one called houseView
 
             VStack {
                 mapView()

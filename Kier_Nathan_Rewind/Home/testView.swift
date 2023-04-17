@@ -7,7 +7,7 @@
 
 import SwiftUI
 import OpenAISwift
-
+//This view is used to display all of the other views in the application.
 struct testView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var entrys: FetchedResults<ToDoItem>
@@ -15,6 +15,7 @@ struct testView: View {
     @AppStorage("isDeviceSettings") private var isDeviceSettings = false
     @AppStorage("isGrayScale") private var isGrayScale = false
     var body: some View {
+        
         TabView {
             
             houseView()

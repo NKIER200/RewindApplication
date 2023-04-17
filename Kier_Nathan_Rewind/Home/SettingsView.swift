@@ -15,50 +15,50 @@ struct SettingsView: View {
     @State private var errorwrapper: errorWrapper?
     var body: some View {
         NavigationView {
-           //form is used for user input
-            Form{
-                
-                Section(header: Text("Display"),
-                        footer: Text("Device settings will overide the applications Dark Mode or Gray Scale  and will use the Devices current theme.")) {
-                    Toggle(isOn: $isDarkMode,
-                           label: {
-                        Text("Dark Mode")
-                    })
-                    .onChange(of: isDarkMode, perform: { _ in
-                        systemThemeManager
-                            .shared
-                            .handleTheme(darkMode: isDarkMode, grayScale: isGrayScale, system: isDeviceSettings)
-                    })
-                    Toggle(isOn: $isGrayScale,
-                           label: {
-                        Text("Gray Scale")
-                    })
-                    .onChange(of: isGrayScale, perform: { _ in
-                        systemThemeManager
-                            .shared
-                            .handleTheme(darkMode: isDarkMode, grayScale: isGrayScale, system: isDeviceSettings)
-                        
-                    })
+            //form is used for user input
+            VStack{
+                Form{
                     
-                    Toggle(isOn: $isDeviceSettings,
-                           label: {
-                        Text("Use Device Settings")
+                    Section(header: Text("Display"),
+                            footer: Text("Device settings will overide the applications Dark Mode or Gray Scale  and will use the Devices current theme.")) {
+                        Toggle(isOn: $isDarkMode,
+                               label: {
+                            Text("Dark Mode")
+                        })
+                        .onChange(of: isDarkMode, perform: { _ in
+                            systemThemeManager
+                                .shared
+                                .handleTheme(darkMode: isDarkMode, grayScale: isGrayScale, system: isDeviceSettings)
+                        })
+                        Toggle(isOn: $isGrayScale,
+                               label: {
+                            Text("Gray Scale")
+                        })
+                        .onChange(of: isGrayScale, perform: { _ in
+                            systemThemeManager
+                                .shared
+                                .handleTheme(darkMode: isDarkMode, grayScale: isGrayScale, system: isDeviceSettings)
+                            
+                        })
                         
-                    })
-                    .onChange(of: isDeviceSettings, perform: { _ in
-                        systemThemeManager
-                            .shared
-                            .handleTheme(darkMode: isDarkMode, grayScale: isGrayScale, system: isDeviceSettings)
-                    })
-                    
+                        Toggle(isOn: $isDeviceSettings,
+                               label: {
+                            Text("Use The Devices Settings")
+                            
+                        })
+                        .onChange(of: isDeviceSettings, perform: { _ in
+                            systemThemeManager
+                                .shared
+                                .handleTheme(darkMode: isDarkMode, grayScale: isGrayScale, system: isDeviceSettings)
+                        })
+                        
+                    }
                 }
             }
-                    Section {
-                        Label("The Miami Heat will win the 2023 NBA Championship", systemImage: "link")
-                    }
-                    
-                }
-                .navigationTitle("Settings")
+            .navigationTitle("Settings")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+                
             }
             
                     }

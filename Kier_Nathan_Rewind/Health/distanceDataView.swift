@@ -41,6 +41,7 @@ struct distanceDataView: View {
         GraphView(stepsForTheGraph: steps)
             
         .navigationTitle("Steps Taken This Week")
+        .navigationBarTitleDisplayMode(.inline)
         }
        
         
@@ -48,7 +49,7 @@ struct distanceDataView: View {
                 if let healthStore = healthStore {
                     healthStore.requestAuthorization { success in
                         if success {
-                            healthStore.calculateSteps { statisticsCollection in
+                            healthStore.calculatetheSteps { statisticsCollection in
                                 if let statisticsCollection = statisticsCollection {
                                     // update the UI
                                     updateUIFromStatistics(statisticsCollection)

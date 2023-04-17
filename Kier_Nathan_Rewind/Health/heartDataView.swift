@@ -46,6 +46,7 @@ struct heartDataView: View {
         
         }
         .navigationTitle("Heartrate This Week")
+        .navigationBarTitleDisplayMode(.inline)
        
         
             .onAppear {

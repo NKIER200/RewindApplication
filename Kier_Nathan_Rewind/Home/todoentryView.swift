@@ -50,6 +50,7 @@ struct todoentryView: View {
                 Text("Count: \(entrys.count)")
                     .navigationTitle("Training sessions")
                     .navigationBarTitleDisplayMode(.inline)
+                    .foregroundColor(Color.red)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarLeading) {
                             EditButton()
