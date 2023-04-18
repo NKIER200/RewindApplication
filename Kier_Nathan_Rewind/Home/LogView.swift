@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+//used for security reasons and not a feature of the app
+// so no one could mess with the application before it was finished
 struct LogView: View {
     @State private var username = ""
     @State private var password = ""
